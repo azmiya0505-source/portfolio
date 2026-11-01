@@ -34,11 +34,12 @@ EDUCATION
 --------------------------------------------------------------------------------
 TECHNICAL SKILLS
 --------------------------------------------------------------------------------
-* Programming Languages: Java, C, C++, C#, Python, Kotlin
-* Database: DBMS (Relational Database Design, SQL, Normalization, Queries)
-* Development Tools: Android Studio, IntelliJ IDEA, VS Code, Git, GitHub
-* Learning & Technology Interests: Flutter, Android Development, Web Application 
-  Development, Cloud Technologies (AWS & Google Cloud)
+* Programming Languages: Java, C, C++, C#, Python, Kotlin, JavaScript, PHP, R
+* Web Technologies: HTML5, CSS3, Tailwind CSS, React, Next.js, Node.js, Express.js
+* Database & Storage: DBMS (Relational Database Design, SQL, Normalization, Queries), MySQL, MongoDB, Supabase
+* Development Tools: Android Studio, IntelliJ IDEA, VS Code, Git, GitHub, Google Antigravity, Vercel, UI/UX Design
+* Learning & Technology Interests: Cloud Technologies (AWS & Google Cloud), AI-Driven Applications, Flutter, Mobile App Development
+* Problem Solving: Analytical Reasoning, Algorithmic Thinking, Competitive Strategy (3x Chess Champion)
 
 --------------------------------------------------------------------------------
 FEATURED PROJECTS
