@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azmiya Aayat | MCA Portfolio | Software & Mobile App Developer</title>
+  
+  <!-- SEO & OpenGraph Metadata -->
+  <meta name="description" content="Personal portfolio of Azmiya Aayat, Computer Applications graduate currently pursuing MCA at Poornaprajna Institute of Management (PIM) Udupi. Aspiring software developer specializing in mobile app development, web technologies, cloud computing, and AI-driven applications.">
+  <meta name="keywords" content="Azmiya Aayat, MCA Student, Poornaprajna Institute of Management, PIM Udupi, Software Developer Portfolio, Mobile App Development, Web Technologies, Cloud Computing AWS Google Cloud, Java, Kotlin, Python, St. Mary's College Shirva">
+  <meta name="author" content="Azmiya Aayat">
+  <link rel="canonical" href="https://azmiya-aayat.vercel.app">
+  
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Azmiya Aayat | MCA Portfolio | Software & Mobile App Developer">
+  <meta property="og:description" content="Computer Applications graduate currently pursuing MCA at PIM Udupi with interests in software development, mobile application development, web technologies, cloud computing, and AI-driven applications.">
+  <meta property="og:url" content="https://azmiya-aayat.vercel.app">
+  <meta property="og:site_name" content="Azmiya Aayat Developer Portfolio">
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Azmiya Aayat | MCA Portfolio">
+  <meta name="twitter:description" content="Computer Applications graduate pursuing MCA at PIM Udupi with interests in software development, mobile apps, web technologies, and cloud computing.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23e0f2fe'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='42' fill='%230284c7'>AA</text></svg>">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Screen Reader Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Navigation Header -->
+  <header class="site-header" id="header" role="banner">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Azmiya Aayat Home">
+        <span class="brand-monogram">AA</span>
+        <div class="brand-info">
+          <span class="brand-name">Azmiya Aayat</span>
+          <span class="brand-role">MCA • PIM Udupi</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Credentials</a></li>
+          <li><a href="#interests" class="nav-link">Interests</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Group -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="icon-btn theme-toggle-btn" aria-label="Toggle light and dark theme" title="Toggle theme">
+          <span class="theme-icon sun-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-icon moon-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Prominent Resume CTA Button -->
+        <div class="resume-cta-wrap">
+          <button id="resume-btn" class="btn btn-outline btn-sm resume-nav-btn" aria-label="View and Download Resume">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Resume</span>
+          </button>
+        </div>
+
+        <!-- Mobile Drawer Hamburger Toggle -->
+        <button id="mobile-menu-toggle" class="icon-btn mobile-toggle-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-nav" class="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-inner">
+        <div class="mobile-drawer-header">
+          <div class="brand-monogram">AA</div>
+          <button id="mobile-close-btn" class="icon-btn close-btn" aria-label="Close navigation menu">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#education" class="mobile-nav-link">Education</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Technical Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Featured Projects</a></li>
+          <li><a href="#certifications" class="mobile-nav-link">Credentials & Honors</a></li>
+          <li><a href="#interests" class="mobile-nav-link">Interests & Languages</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-actions">
+          <button id="mobile-resume-btn" class="btn btn-primary w-full">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>View & Download Resume</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Backdrop -->
+  <div id="drawer-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+
+  <!-- Main Landmark -->
+  <main id="main-content">
+    
+    <!-- Hero Showcase Section -->
+    <section id="hero" class="hero-section" aria-label="Hero Introduction">
+      <!-- Animated Particle Canvas Background -->
+      <canvas id="hero-particles" class="hero-particles-canvas" aria-hidden="true"></canvas>
+
+      <!-- Ambient Luminous Glow Orbs -->
+      <div class="hero-bg-glow glow-1" aria-hidden="true"></div>
+      <div class="hero-bg-glow glow-2" aria-hidden="true"></div>
+      <div class="hero-bg-glow glow-3" aria-hidden="true"></div>
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+
+      <!-- Floating Tech Pills -->
+      <div class="floating-badge fb-1" aria-hidden="true">
+        <span class="fb-icon">📱</span>
+        <span class="fb-text">Mobile & App Explorer</span>
+      </div>
+      <div class="floating-badge fb-2" aria-hidden="true">
+        <span class="fb-icon">☁️</span>
+        <span class="fb-text">AWS & GCP Cloud</span>
+      </div>
+      <div class="floating-badge fb-3" aria-hidden="true">
+        <span class="fb-icon">♟️</span>
+        <span class="fb-text">3x Chess Champion</span>
+      </div>
+
+      <div class="container hero-container">
+        <!-- Status Badge -->
+        <div class="hero-status-pill animate-fade-in">
+          <span class="status-pulse-dot" aria-hidden="true"></span>
+          <span class="status-text">Computer Applications Graduate • MCA Student at PIM Udupi</span>
+        </div>
+
+        <!-- Student Headline -->
+        <h1 class="hero-title animate-fade-in-up">
+          Hi, I'm <span class="gradient-text">Azmiya Aayat</span>
+        </h1>
+
+        <!-- Professional Headline with Animated Typewriter -->
+        <p class="hero-subtitle animate-fade-in-up delay-1">
+          Master of Computer Applications <span class="divider-dot" aria-hidden="true">•</span> 
+          <span class="typewriter-wrapper">
+            <span id="typewriter-text" class="cyan-highlight">Aspiring software development</span>
+            <span class="typewriter-cursor" aria-hidden="true">|</span>
+          </span>
+        </p>
+
+        <!-- Engaging Professional Summary / Elevator Pitch -->
+        <blockquote class="hero-quote animate-fade-in-up delay-2">
+          <svg class="quote-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          <p>"I am a Computer Applications graduate currently pursuing MCA, with an active interest in software development, mobile application development, web technologies, cloud computing, and AI-driven applications. Driven by curiosity to master new tools and approach real-world engineering with an analytical, problem-solving mindset."</p>
+        </blockquote>
+
+        <!-- Quick Meta Tags -->
+        <div class="hero-tags animate-fade-in-up delay-3">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Udupi, Karnataka, India</span>
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+            <span>PIM Udupi (MCA Pursuing)</span>
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+            <span>Software, Mobile & Cloud Focus</span>
+          </span>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="hero-actions animate-fade-in-up delay-4">
+          <a href="#projects" class="btn btn-primary btn-animated-glow">
+            <span>Explore Projects</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          
+          <!-- Prominent Download Resume Button -->
+          <button id="hero-resume-trigger" class="btn btn-accent-glow" aria-label="View and Download Resume">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download Resume</span>
+          </button>
+
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Me</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Quick Contacts Bar -->
+        <div class="hero-social-strip animate-fade-in-up delay-5">
+          <span class="social-label">Connect directly:</span>
+          <a href="mailto:azmiyaaayat62@gmail.com" class="social-icon-link" aria-label="Email Azmiya Aayat at azmiyaaayat62@gmail.com" title="azmiyaaayat62@gmail.com">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span class="social-text">azmiyaaayat62@gmail.com</span>
+          </a>
+          <button class="copy-email-btn" id="copy-email-pill" aria-label="Copy email address" title="Copy email address">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span class="copy-hint">Copy</span>
+          </button>
+
+          <a href="https://linkedin.com/in/AzmiyaAayat" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Visit Azmiya Aayat's LinkedIn Profile" title="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <span class="social-text">linkedin.com/in/AzmiyaAayat</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights / Impact Stats Ribbon -->
+    <div class="stats-ribbon-wrapper">
+      <div class="container">
+        <div class="stats-ribbon card reveal">
+          <div class="stat-box">
+            <div class="stat-icon">🎓</div>
+            <div class="stat-content">
+              <span class="stat-number">MCA • PIM</span>
+              <span class="stat-label">BCA (Completed) • Pursuing MCA</span>
+            </div>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-box">
+            <div class="stat-icon">💻</div>
+            <div class="stat-content">
+              <span class="stat-number">4 Projects</span>
+              <span class="stat-label">Web, AI, Games & Media</span>
+            </div>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-box">
+            <div class="stat-icon">☁️</div>
+            <div class="stat-content">
+              <span class="stat-number">AWS & GCP</span>
+              <span class="stat-label">Cloud Computing Certified</span>
+            </div>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-box">
+            <div class="stat-icon">♟️</div>
+            <div class="stat-content">
+              <span class="stat-number">3x Champ</span>
+              <span class="stat-label">Consecutive Chess Champion</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Profile & Mindset</span>
+          </div>
+          <h2 id="about-heading" class="section-title">About Me</h2>
+          <p class="section-subtitle">Dedicated to mastering computer applications, building practical software, and advancing in mobile and cloud technologies.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Card -->
+          <div class="card about-main-card">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="about-card-badge">Professional Summary</div>
+            <h3 class="about-card-title">Curiosity-Driven Developer with a Problem-Solving Mindset</h3>
+            <p class="about-text">
+              I am a <strong>Computer Applications graduate currently pursuing MCA</strong> at 
+              <span class="text-highlight">Poornaprajna Institute of Management (PIM)</span>, Udupi, Karnataka. 
+              My passion lies in <strong>software development, mobile application development, web technologies, cloud computing, and AI-driven applications</strong>.
+            </p>
+            <p class="about-text">
+              Having completed my <strong>Bachelor of Computer Applications (BCA)</strong> from St. Mary's College, Shirva, I developed strong core fundamentals in procedural and object-oriented programming (C, C++, Java, Python, C#, Kotlin), database management systems (DBMS), and modern software development workflows.
+            </p>
+            <p class="about-text">
+              As a continuous learner, I actively explore emerging paradigms including Flutter, Android development, cloud architectures on AWS and Google Cloud, and AI integration. My disciplined problem-solving mindset is demonstrated through both technical project execution and winning the Inter-Class Chess Competition for three consecutive years.
+            </p>
+
+            <div class="about-attributes-grid">
+              <div class="attribute-box">
+                <div class="attribute-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <div class="attribute-info">
+                  <span class="attribute-title">Software & Web Development</span>
+                  <span class="attribute-desc">Java, C/C++, C#, Python, MERN & Web Architecture</span>
+                </div>
+              </div>
+
+              <div class="attribute-box">
+                <div class="attribute-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                </div>
+                <div class="attribute-info">
+                  <span class="attribute-title">Mobile App Development</span>
+                  <span class="attribute-desc">Android Studio, Kotlin & Flutter Explorations</span>
+                </div>
+              </div>
+
+              <div class="attribute-box">
+                <div class="attribute-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                  </svg>
+                </div>
+                <div class="attribute-info">
+                  <span class="attribute-title">Cloud & AI Technologies</span>
+                  <span class="attribute-desc">AWS, Google Cloud Certified & AI-Driven Apps</span>
+                </div>
+              </div>
+
+              <div class="attribute-box">
+                <div class="attribute-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                  </svg>
+                </div>
+                <div class="attribute-info">
+                  <span class="attribute-title">Analytical Problem Solving</span>
+                  <span class="attribute-desc">Chess Champion 3 Years & Young Turks 2026</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Fact Sidebar -->
+          <div class="about-sidebar">
+            <div class="card sidebar-card">
+              <h3 class="sidebar-title">Fast Facts</h3>
+              <ul class="fact-list">
+                <li class="fact-item">
+                  <span class="fact-label">Name:</span>
+                  <span class="fact-value">Azmiya Aayat</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Location:</span>
+                  <span class="fact-value">Udupi, Karnataka, India</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Academic Status:</span>
+                  <span class="fact-value">MCA (Currently Pursuing)</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Graduate Inst:</span>
+                  <span class="fact-value">PIM, Udupi</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Undergraduate:</span>
+                  <span class="fact-value">BCA, St. Mary's College, Shirva</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Pre-University:</span>
+                  <span class="fact-value">Govt. PU College, Udupi</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Email:</span>
+                  <span class="fact-value highlight-cyan">azmiyaaayat62@gmail.com</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Languages:</span>
+                  <span class="fact-value">English, Hindi, Kannada</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Primary Objective:</span>
+                  <span class="fact-value highlight-cyan">Software & Mobile Roles</span>
+                </li>
+              </ul>
+
+              <div class="sidebar-quote-box">
+                <p class="sidebar-quote">"Passionate about turning foundational principles into functional, well-architected applications."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Education Section -->
+    <section id="education" class="section education-section" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Academic Rigor</span>
+          </div>
+          <h2 id="education-heading" class="section-title">Academic Education</h2>
+          <p class="section-subtitle">A verified educational track record rooted in computer applications and software engineering principles.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Track Line -->
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Entry 1: MCA -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-pulse"></span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-badge-row">
+                <span class="badge badge-primary">Currently Pursuing</span>
+                <span class="timeline-date">2026 – Present</span>
+              </div>
+              <h3 class="timeline-title">Master of Computer Applications (MCA)</h3>
+              <h4 class="timeline-institution">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span>Poornaprajna Institute of Management (PIM)</span>
+                <span class="location-sub">Udupi, Karnataka</span>
+              </h4>
+              <p class="timeline-spec"><strong>Specialization:</strong> Computer Applications & Software Development</p>
+              <p class="timeline-desc">
+                Currently pursuing in-depth advanced graduate coursework covering software engineering methodologies, data structures, full-stack application development, database design, and cloud-integrated systems. Active in hands-on technical labs and collaborative developer projects.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag-pill">Software Engineering</span>
+                <span class="tag-pill">Advanced Computer Applications</span>
+                <span class="tag-pill">Cloud Technologies</span>
+                <span class="tag-pill">Mobile Development Explorations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 2: BCA -->
+          <div class="timeline-item">
+            <div class="timeline-marker completed-marker" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-badge-row">
+                <span class="badge badge-success">Completed</span>
+                <span class="timeline-date">2023 – 2026</span>
+              </div>
+              <h3 class="timeline-title">Bachelor of Computer Applications (BCA)</h3>
+              <h4 class="timeline-institution">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span>St. Mary's College, Shirva</span>
+                <span class="location-sub">Karnataka</span>
+              </h4>
+              <p class="timeline-spec"><strong>Specialization:</strong> Computer Applications</p>
+              <p class="timeline-desc">
+                Completed comprehensive undergraduate curriculum in computer science fundamentals: object-oriented programming in C++, Java, web development fundamentals (HTML, CSS, JavaScript), database management with SQL, computer networks, and algorithmic problem solving.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag-pill">Computer Science Fundamentals</span>
+                <span class="tag-pill">Database Management (DBMS)</span>
+                <span class="tag-pill">Web Fundamentals</span>
+                <span class="tag-pill">Object-Oriented Programming</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 3: PUC -->
+          <div class="timeline-item">
+            <div class="timeline-marker completed-marker" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-badge-row">
+                <span class="badge badge-success">Completed</span>
+                <span class="timeline-date">Pre-University</span>
+              </div>
+              <h3 class="timeline-title">Pre-University Course (PUC)</h3>
+              <h4 class="timeline-institution">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span>Govt. PU College, Udupi</span>
+                <span class="location-sub">Udupi, Karnataka</span>
+              </h4>
+              <p class="timeline-spec"><strong>Focus:</strong> Pre-University Academic Curriculum</p>
+              <p class="timeline-desc">
+                Established core academic discipline, logical reasoning, and quantitative problem-solving foundations preparatory to higher technical computing education.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag-pill">Foundational Academics</span>
+                <span class="tag-pill">Analytical Thinking</span>
+                <span class="tag-pill">Mathematics & Logic</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills & Proficiency Section -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Skill Architecture</span>
+          </div>
+          <h2 id="skills-heading" class="section-title">Technical Skills & Proficiency</h2>
+          <p class="section-subtitle">
+            Organized categories of established programming languages, databases, developer tooling, and active learning interests.
+          </p>
+        </div>
+
+        <!-- Authenticity & Legend Banner -->
+        <div class="skills-legend-card card">
+          <div class="legend-header">
+            <div class="legend-title-group">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cyan-icon" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <strong>Skill Level & Category Architecture:</strong>
+            </div>
+            <p class="legend-notice">Distinguishing established technical competencies from forward-looking learning interests.</p>
+          </div>
+          <div class="legend-badges">
+            <div class="legend-pill level-basic">
+              <span class="dot basic-dot"></span>
+              <span class="level-name">Core Skill</span>
+              <span class="level-desc">(Academic & Hands-on Knowledge)</span>
+            </div>
+            <div class="legend-pill level-learning">
+              <span class="dot learning-dot"></span>
+              <span class="level-name">Learning Interest</span>
+              <span class="level-desc">(Active Exploration & Future Focus)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Category Filter Tabs -->
+        <div class="filter-tabs-container">
+          <div class="tabs-scroll" role="tablist" aria-label="Skills Category Filter">
+            <button class="tab-btn active" role="tab" aria-selected="true" data-filter="all">All Skills</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="programming">Programming</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="database">Database (DBMS)</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="tools">Development Tools</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="learning">Learning Interests</button>
+          </div>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+          
+          <!-- Category: Programming - Java -->
+          <div class="skill-card card" data-category="programming">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon">
+                <span class="code-symbol">☕</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Java</h3>
+                <span class="skill-cat-label">Programming Language</span>
+              </div>
+              <span class="badge badge-basic">Core Skill</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Java proficiency 65%">
+              <div class="meter-bar meter-basic" style="width: 65%;"></div>
+            </div>
+            <p class="skill-detail">Object-oriented paradigms, classes, inheritance, JVM architecture, exception handling, and application structure.</p>
+          </div>
+
+          <!-- Category: Programming - C -->
+          <div class="skill-card card" data-category="programming">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon">
+                <span class="code-symbol">&lt;C&gt;</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">C</h3>
+                <span class="skill-cat-label">Programming Language</span>
+              </div>
+              <span class="badge badge-basic">Core Skill</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="C proficiency 60%">
+              <div class="meter-bar meter-basic" style="width: 60%;"></div>
+            </div>
+            <p class="skill-detail">Procedural fundamentals, memory concepts, pointer arithmetic, structures, and foundational algorithms.</p>
+          </div>
+
+          <!-- Category: Programming - C++ -->
+          <div class="skill-card card" data-category="programming">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon">
+                <span class="code-symbol">C++</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">C++</h3>
+                <span class="skill-cat-label">Programming Language</span>
+              </div>
+              <span class="badge badge-basic">Core Skill</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="C++ proficiency 60%">
+              <div class="meter-bar meter-basic" style="width: 60%;"></div>
+            </div>
+            <p class="skill-detail">Object-oriented concepts, polymorphism, encapsulation, file I/O, and data structure implementations.</p>
+          </div>
+
+          <!-- Category: Programming - C# -->
+          <div class="skill-card card" data-category="programming">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon">
+                <span class="code-symbol">C#</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">C#</h3>
+                <span class="skill-cat-label">Programming (.NET)</span>
+              </div>
+              <span class="badge badge-basic">Core Skill</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="C# proficiency 50%">
+              <div class="meter-bar meter-basic" style="width: 50%;"></div>
+            </div>
+            <p class="skill-detail">Typed variable management, class hierarchies, component structures, and object-oriented software practices.</p>
+          </div>
+
+          <!-- Category: Programming - Python -->
+          <div class="skill-card card" data-category="programming">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon">
+                <span class="code-symbol">🐍</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Python</h3>
+                <span class="skill-cat-label">Programming Language</span>
+              </div>
+              <span class="badge badge-basic">Core Skill</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency 60%">
+              <div class="meter-bar meter-basic" style="width: 60%;"></div>
+            </div>
+            <p class="skill-detail">Scripting, algorithmic logic, data structures, automation workflows, and introductory AI model integrations.</p>
+          </div>
+
+          <!-- Category: Programming - Kotlin -->
+          <div class="skill-card card" data-category="programming">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon">
+                <span class="code-symbol">KT</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Kotlin</h3>
+                <span class="skill-cat-label">Mobile Language</span>
+              </div>
+              <span class="badge badge-basic">Core Skill</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Kotlin proficiency 50%">
+              <div class="meter-bar meter-basic" style="width: 50%;"></div>
+            </div>
+            <p class="skill-detail">Modern Android programming syntax, null safety, coroutine concepts, and mobile application lifecycle explorations.</p>
+          </div>
+
+          <!-- Category: Database - DBMS -->
+          <div class="skill-card card" data-category="database">
+            <div class="skill-top">
+              <div class="skill-icon-wrap backend-icon">
+                <span class="code-symbol">🗄️</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">DBMS</h3>
+                <span class="skill-cat-label">Database Management</span>
+              </div>
+              <span class="badge badge-basic">Core Skill</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="DBMS proficiency 65%">
+              <div class="meter-bar meter-basic" style="width: 65%;"></div>
+            </div>
+            <p class="skill-detail">Relational database design, SQL querying (SELECT, JOIN, nested queries), normalization, ACID properties, and data integrity.</p>
+          </div>
+
+          <!-- Category: Development Tools - Android Studio -->
+          <div class="skill-card card" data-category="tools">
+            <div class="skill-top">
+              <div class="skill-icon-wrap tool-icon">
+                <span class="code-symbol">📱</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Android Studio</h3>
+                <span class="skill-cat-label">Mobile IDE</span>
+              </div>
+              <span class="badge badge-basic">Core Tool</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Android Studio proficiency 60%">
+              <div class="meter-bar meter-basic" style="width: 60%;"></div>
+            </div>
+            <p class="skill-detail">Android project configuration, emulator debugging, XML layout hierarchies, and Gradle build setups.</p>
+          </div>
+
+          <!-- Category: Development Tools - IntelliJ IDEA -->
+          <div class="skill-card card" data-category="tools">
+            <div class="skill-top">
+              <div class="skill-icon-wrap tool-icon">
+                <span class="code-symbol">IJ</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">IntelliJ IDEA</h3>
+                <span class="skill-cat-label">Java / Kotlin IDE</span>
+              </div>
+              <span class="badge badge-basic">Core Tool</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="IntelliJ IDEA proficiency 60%">
+              <div class="meter-bar meter-basic" style="width: 60%;"></div>
+            </div>
+            <p class="skill-detail">Java and Kotlin development, automated refactoring, code compilation, and project workspace organization.</p>
+          </div>
+
+          <!-- Category: Development Tools - VS Code & Git -->
+          <div class="skill-card card" data-category="tools">
+            <div class="skill-top">
+              <div class="skill-icon-wrap tool-icon">
+                <span class="code-symbol">⌨</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">VS Code & Git</h3>
+                <span class="skill-cat-label">Editor & Version Control</span>
+              </div>
+              <span class="badge badge-basic">Core Tool</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="VS Code and Git proficiency 65%">
+              <div class="meter-bar meter-basic" style="width: 65%;"></div>
+            </div>
+            <p class="skill-detail">Code editing, extensions, multi-file workspaces, Git version control, commits, and GitHub repository hosting.</p>
+          </div>
+
+          <!-- Category: Learning & Tech Interests - Flutter -->
+          <div class="skill-card card learning-card" data-category="learning">
+            <div class="skill-top">
+              <div class="skill-icon-wrap web-icon">
+                <span class="code-symbol">💙</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Flutter</h3>
+                <span class="skill-cat-label">Cross-Platform UI</span>
+              </div>
+              <span class="badge badge-learning">
+                <span class="learning-dot" aria-hidden="true"></span>
+                Learning Interest
+              </span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Flutter learning progress">
+              <div class="meter-bar meter-learning" style="width: 45%;"></div>
+            </div>
+            <p class="skill-detail">Active exploration in cross-platform mobile UI engineering, widget tree architecture, and dynamic multi-platform development.</p>
+          </div>
+
+          <!-- Category: Learning & Tech Interests - Android Development -->
+          <div class="skill-card card learning-card" data-category="learning">
+            <div class="skill-top">
+              <div class="skill-icon-wrap tool-icon">
+                <span class="code-symbol">🤖</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Android Development</h3>
+                <span class="skill-cat-label">Native Mobile Apps</span>
+              </div>
+              <span class="badge badge-learning">
+                <span class="learning-dot" aria-hidden="true"></span>
+                Learning Interest
+              </span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Android development learning progress">
+              <div class="meter-bar meter-learning" style="width: 50%;"></div>
+            </div>
+            <p class="skill-detail">Curiosity-driven study of native Android architecture, activities, intents, Material Design, and mobile user interaction flows.</p>
+          </div>
+
+          <!-- Category: Learning & Tech Interests - Web Application Development -->
+          <div class="skill-card card learning-card" data-category="learning">
+            <div class="skill-top">
+              <div class="skill-icon-wrap web-icon">
+                <span class="code-symbol">&lt;/&gt;</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Web App Development</h3>
+                <span class="skill-cat-label">Modern Web Systems</span>
+              </div>
+              <span class="badge badge-learning">
+                <span class="learning-dot" aria-hidden="true"></span>
+                Learning Interest
+              </span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Web application development learning progress">
+              <div class="meter-bar meter-learning" style="width: 55%;"></div>
+            </div>
+            <p class="skill-detail">Ongoing focus on full-stack web architectures, REST APIs, responsive client-server interfaces, and modern front-end styling.</p>
+          </div>
+
+          <!-- Category: Learning & Tech Interests - Cloud Technologies -->
+          <div class="skill-card card learning-card" data-category="learning">
+            <div class="skill-top">
+              <div class="skill-icon-wrap backend-icon">
+                <span class="code-symbol">☁️</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Cloud Technologies</h3>
+                <span class="skill-cat-label">AWS & Google Cloud</span>
+              </div>
+              <span class="badge badge-learning">
+                <span class="learning-dot" aria-hidden="true"></span>
+                Learning Interest
+              </span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Cloud technologies learning progress">
+              <div class="meter-bar meter-learning" style="width: 55%;"></div>
+            </div>
+            <p class="skill-detail">Reinforced by AWS and Google Cloud certifications; actively exploring cloud hosting, distributed computing, and serverless workflows.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Technical Artifacts</span>
+          </div>
+          <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications showcasing web systems, voice AI integration, database management, and interactive media.</p>
+        </div>
+
+        <!-- Project Filter Tabs -->
+        <div class="filter-tabs-container">
+          <div class="tabs-scroll" role="tablist" aria-label="Project Filter">
+            <button class="tab-btn active" role="tab" aria-selected="true" data-proj-filter="all">All Projects (4)</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-proj-filter="web">Web & Database</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-proj-filter="ai">Voice & AI</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-proj-filter="media">Games & Multimedia</button>
+          </div>
+        </div>
+
+        <!-- Project Showcase Cards Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Bus Management System -->
+          <article class="project-card card" data-proj-category="web">
+            <div class="project-card-header">
+              <div class="project-tags-row">
+                <span class="project-cat-pill">Web Platform</span>
+                <span class="project-cat-pill secondary">Database Management</span>
+                <span class="badge badge-completed">
+                  <span class="pulse-emerald"></span>
+                  Completed
+                </span>
+              </div>
+              <h3 class="project-title">Bus Management System</h3>
+              <p class="project-subtitle">Web-based platform to manage bus routes, schedules, and passenger information</p>
+            </div>
+
+            <div class="project-body">
+              <div class="problem-box">
+                <div class="problem-title">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  <span>Problem Being Solved</span>
+                </div>
+                <p class="problem-text">
+                  Replaces cumbersome manual transit logs with a structured relational web application, enabling transit operators to manage routes and passengers to look up bus schedules in real time.
+                </p>
+              </div>
+
+              <p class="project-overview">
+                Engineered a comprehensive web-based platform designed to coordinate bus route management, vehicle scheduling, passenger ticketing, and seat availability through a clear relational database architecture.
+              </p>
+
+              <div class="project-contributions">
+                <h4 class="contributions-title">Key Highlights:</h4>
+                <ul class="contributions-list">
+                  <li><strong>Route & Schedule Database:</strong> Designed normalized DBMS tables linking bus routes, stop timings, bus capacities, and dynamic schedules.</li>
+                  <li><strong>Passenger Records:</strong> Implemented passenger lookup, ticketing records, and reservation tracking with data validation.</li>
+                  <li><strong>Responsive User Interface:</strong> Built intuitive web dashboards for quick search and schedule browsing across all screen sizes.</li>
+                </ul>
+              </div>
+
+              <div class="tech-stack-group">
+                <h4 class="tech-stack-title">Technologies Used:</h4>
+                <div class="tech-pills">
+                  <span class="tech-pill highlight-pill">DBMS / SQL</span>
+                  <span class="tech-pill">PHP</span>
+                  <span class="tech-pill">HTML5</span>
+                  <span class="tech-pill">CSS3</span>
+                  <span class="tech-pill">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary btn-sm view-project-btn" id="open-bus-modal" aria-label="View architecture details of Bus Management System">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>View Details & System Flow</span>
+              </button>
+              <div class="project-auth-note">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cyan-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Full-Stack Web & DBMS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Virtual Assistant (Retained Existing Project) -->
+          <article class="project-card card" data-proj-category="web ai">
+            <div class="project-card-header">
+              <div class="project-tags-row">
+                <span class="project-cat-pill">Full-Stack MERN</span>
+                <span class="project-cat-pill secondary">Voice AI Interaction</span>
+                <span class="badge badge-completed">
+                  <span class="pulse-emerald"></span>
+                  Completed
+                </span>
+              </div>
+              <h3 class="project-title">Virtual Assistant</h3>
+              <p class="project-subtitle">Full-Stack Voice-Based Assistant Powered by MERN, Gemini & Ollama APIs</p>
+            </div>
+
+            <div class="project-body">
+              <!-- Voice Assistant Interactive Waveform Widget -->
+              <div class="voice-assistant-visualizer" id="va-visualizer">
+                <div class="voice-wave-container">
+                  <div class="voice-wave-bars" aria-hidden="true">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                    <span class="bar bar-4"></span>
+                    <span class="bar bar-5"></span>
+                    <span class="bar bar-6"></span>
+                    <span class="bar bar-7"></span>
+                    <span class="bar bar-8"></span>
+                  </div>
+                  <div class="voice-prompt-bubble">
+                    <span class="bubble-icon">🎙️</span>
+                    <span class="bubble-text" id="va-bubble-text">Voice Interaction: "Gemini + Ollama API engine active"</span>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-sm btn-outline test-voice-btn" id="test-voice-btn" title="Simulate voice interaction">
+                  <span class="btn-wave-dot" aria-hidden="true"></span>
+                  <span>Simulate Voice Query</span>
+                </button>
+              </div>
+
+              <div class="problem-box">
+                <div class="problem-title">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  <span>Problem Being Solved</span>
+                </div>
+                <p class="problem-text">
+                  To connect the backend and frontend seamlessly, optimizing the assistant's voice and text response time across diverse internet connectivity speeds.
+                </p>
+              </div>
+
+              <p class="project-overview">
+                Developed as a comprehensive voice-based interactive assistant using the MERN stack. Integrates Google Gemini API and Ollama API keys to enable fluid speech recognition, natural language comprehension, and dynamic conversational feedback. Built entirely from scratch.
+              </p>
+
+              <div class="project-contributions">
+                <h4 class="contributions-title">Key Highlights:</h4>
+                <ul class="contributions-list">
+                  <li><strong>Full-Stack Architecture:</strong> Built the entire project independently with React front-end and Node/Express backend.</li>
+                  <li><strong>AI Voice Pipeline:</strong> Integrated Web Speech API with Gemini and Ollama APIs for instantaneous audio prompt routing.</li>
+                  <li><strong>OAuth & Cloud Media:</strong> Secured user sessions via Google OAuth and managed cloud assets with Cloudinary.</li>
+                </ul>
+              </div>
+
+              <div class="tech-stack-group">
+                <h4 class="tech-stack-title">Technologies Used:</h4>
+                <div class="tech-pills">
+                  <span class="tech-pill highlight-pill">Gemini API</span>
+                  <span class="tech-pill highlight-pill">Ollama API</span>
+                  <span class="tech-pill">React</span>
+                  <span class="tech-pill">Node.js</span>
+                  <span class="tech-pill">Express.js</span>
+                  <span class="tech-pill">MongoDB</span>
+                  <span class="tech-pill">Tailwind CSS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary btn-sm view-project-btn" id="open-va-modal" aria-label="View detailed architectural breakdown of Virtual Assistant">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>View Architecture & Details</span>
+              </button>
+              <div class="project-auth-note">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cyan-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Sole Creator • Real Project</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Scratch Shooting Bird -->
+          <article class="project-card card" data-proj-category="media">
+            <div class="project-card-header">
+              <div class="project-tags-row">
+                <span class="project-cat-pill">Game Development</span>
+                <span class="project-cat-pill secondary">Algorithmic Logic</span>
+                <span class="badge badge-completed">
+                  <span class="pulse-emerald"></span>
+                  Completed
+                </span>
+              </div>
+              <h3 class="project-title">Scratch Shooting Bird</h3>
+              <p class="project-subtitle">Interactive shooting game developed using Scratch</p>
+            </div>
+
+            <div class="project-body">
+              <div class="problem-box">
+                <div class="problem-title">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  <span>Problem Being Solved</span>
+                </div>
+                <p class="problem-text">
+                  Demonstrates core game loop mechanics, algorithmic coordinate tracking, and event-driven sprite interaction within a responsive browser gaming experience.
+                </p>
+              </div>
+
+              <p class="project-overview">
+                Developed an engaging, interactive shooting game built using visual programming logic in Scratch. Programmed dynamic flight physics, projectile collision detection, responsive user input controls, and a persistent scoring algorithm.
+              </p>
+
+              <div class="project-contributions">
+                <h4 class="contributions-title">Key Highlights:</h4>
+                <ul class="contributions-list">
+                  <li><strong>Event-Driven Programming:</strong> Structured modular event broadcasts for target spawning, flight paths, and hit reactions.</li>
+                  <li><strong>Collision Detection:</strong> Engineered accurate 2D sprite collision mathematics for crosshair and bird hit zones.</li>
+                  <li><strong>Score Tracking & Audio:</strong> Designed dynamic score multipliers, game state resets, and responsive audio triggers.</li>
+                </ul>
+              </div>
+
+              <div class="tech-stack-group">
+                <h4 class="tech-stack-title">Technologies Used:</h4>
+                <div class="tech-pills">
+                  <span class="tech-pill highlight-pill">Scratch</span>
+                  <span class="tech-pill">Game Logic</span>
+                  <span class="tech-pill">Collision Algorithms</span>
+                  <span class="tech-pill">Event Handling</span>
+                  <span class="tech-pill">Interactive Media</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary btn-sm view-project-btn" id="open-scratch-modal" aria-label="View game mechanics details of Scratch Shooting Bird">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>View Game Architecture</span>
+              </button>
+              <div class="project-auth-note">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cyan-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Interactive Gaming</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Animation Video Website -->
+          <article class="project-card card" data-proj-category="web media">
+            <div class="project-card-header">
+              <div class="project-tags-row">
+                <span class="project-cat-pill">Front-End Development</span>
+                <span class="project-cat-pill secondary">Multimedia UI</span>
+                <span class="badge badge-completed">
+                  <span class="pulse-emerald"></span>
+                  Completed
+                </span>
+              </div>
+              <h3 class="project-title">Animation Video Website</h3>
+              <p class="project-subtitle">Website developed using HTML, CSS, and JavaScript to showcase animations and multimedia content</p>
+            </div>
+
+            <div class="project-body">
+              <div class="problem-box">
+                <div class="problem-title">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  <span>Problem Being Solved</span>
+                </div>
+                <p class="problem-text">
+                  Delivers a lightweight, high-performance multimedia showcase that seamlessly plays animations and videos without buffering or layout shifts across mobile and desktop.
+                </p>
+              </div>
+
+              <p class="project-overview">
+                Engineered an aesthetic, responsive multimedia portal using pure HTML5, CSS3, and JavaScript. Features custom CSS keyframe transitions, dynamic video player integrations, and responsive visual layout grids.
+              </p>
+
+              <div class="project-contributions">
+                <h4 class="contributions-title">Key Highlights:</h4>
+                <ul class="contributions-list">
+                  <li><strong>Custom CSS Animations:</strong> Authored smooth keyframe transitions, micro-interactions, and media hover states.</li>
+                  <li><strong>Optimized Multimedia Players:</strong> Handled HTML5 video player APIs with custom playback controls and poster thumbnails.</li>
+                  <li><strong>Fluid Responsive Layout:</strong> Engineered flexbox and grid layouts adaptable from mobile viewports to ultra-wide displays.</li>
+                </ul>
+              </div>
+
+              <div class="tech-stack-group">
+                <h4 class="tech-stack-title">Technologies Used:</h4>
+                <div class="tech-pills">
+                  <span class="tech-pill highlight-pill">HTML5</span>
+                  <span class="tech-pill highlight-pill">CSS3 Keyframes</span>
+                  <span class="tech-pill">JavaScript (ES6+)</span>
+                  <span class="tech-pill">Responsive Design</span>
+                  <span class="tech-pill">Media APIs</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary btn-sm view-project-btn" id="open-anim-modal" aria-label="View frontend architecture of Animation Video Website">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>View Design Details</span>
+              </button>
+              <div class="project-auth-note">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cyan-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Pure HTML/CSS/JS</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Professional Certifications & Achievements Section -->
+    <section id="certifications" class="section cert-section" aria-labelledby="cert-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Credentials & Recognition</span>
+          </div>
+          <h2 id="cert-heading" class="section-title">Certifications & Achievements</h2>
+          <p class="section-subtitle">Verified professional milestones, national talent recognition, and extracurricular competitive excellence.</p>
+        </div>
+
+        <div class="credentials-grid">
+          <!-- Certifications Column -->
+          <div class="cred-column">
+            <h3 class="cred-col-title">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cyan-icon" aria-hidden="true">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+              <span>Professional Certifications</span>
+            </h3>
+
+            <!-- Cert 1: Cloud Computing on AWS -->
+            <div class="card cert-card">
+              <div class="cert-header">
+                <span class="cert-year">Cloud</span>
+                <span class="badge badge-success">Verified</span>
+              </div>
+              <h4 class="cert-name">Cloud Computing on AWS</h4>
+              <p class="cert-issuer">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                </svg>
+                <span>Credential: <strong>Amazon Web Services (AWS)</strong></span>
+              </p>
+              <p class="cert-desc">
+                In-depth coursework and training covering core AWS cloud infrastructure, virtualization, Amazon EC2 compute instances, Amazon S3 storage, IAM security policies, and distributed cloud computing architecture.
+              </p>
+            </div>
+
+            <!-- Cert 2: Cloud Computing on Google Cloud -->
+            <div class="card cert-card">
+              <div class="cert-header">
+                <span class="cert-year">Cloud</span>
+                <span class="badge badge-success">Verified</span>
+              </div>
+              <h4 class="cert-name">Cloud Computing on Google Cloud</h4>
+              <p class="cert-issuer">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                </svg>
+                <span>Credential: <strong>Google Cloud Platform (GCP)</strong></span>
+              </p>
+              <p class="cert-desc">
+                Comprehensive training on Google Cloud Platform essentials, Compute Engine, Cloud Storage, VPC networking fundamentals, cloud resource management, and modern cloud deployment models.
+              </p>
+            </div>
+
+            <!-- Cert 3: Naukri Campus Young Turks 2026 -->
+            <div class="card cert-card">
+              <div class="cert-header">
+                <span class="cert-year">2026</span>
+                <span class="badge badge-success">Achievement</span>
+              </div>
+              <h4 class="cert-name">Naukri Campus Young Turks 2026 – Round 1</h4>
+              <p class="cert-issuer">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+                <span>Issuing Body: <strong>Naukri Campus</strong></span>
+              </p>
+              <p class="cert-desc">
+                Achievement Certificate awarded for successfully clearing Round 1 in the prestigious nationwide Young Turks 2026 assessment, evaluating advanced technical problem solving and quantitative aptitude.
+              </p>
+            </div>
+
+            <!-- Cert 4: Infosys Springboard AI -->
+            <div class="card cert-card">
+              <div class="cert-header">
+                <span class="cert-year">AI</span>
+                <span class="badge badge-success">Verified</span>
+              </div>
+              <h4 class="cert-name">Introduction To AI & AI for All</h4>
+              <p class="cert-issuer">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <span>Issuing Body: <strong>Infosys Springboard</strong></span>
+              </p>
+              <p class="cert-desc">
+                Foundational certifications covering artificial intelligence principles, machine learning concepts, neural paradigms, ethical AI dimensions, and practical developer accessibility.
+              </p>
+            </div>
+          </div>
+
+          <!-- Achievements Column -->
+          <div class="cred-column">
+            <h3 class="cred-col-title">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="gold-icon" aria-hidden="true">
+                <circle cx="12" cy="8" r="6"></circle>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+              </svg>
+              <span>Competitive Achievements & Honors</span>
+            </h3>
+
+            <!-- Achievement 1: Chess Champion 3 Years -->
+            <div class="card honor-card">
+              <div class="honor-header">
+                <span class="honor-badge gold">Trophy</span>
+                <span class="honor-year">3 Consecutive Years</span>
+              </div>
+              <h4 class="honor-title">Winner in Inter-Class Chess Competition</h4>
+              <p class="honor-conferred">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span>Conferred by: <strong>St. Mary's College, Shirva</strong></span>
+              </p>
+              <p class="honor-desc">
+                Secured 1st place in the Inter-Class Chess Competition for three consecutive years, reflecting sustained analytical reasoning, high-pressure strategic foresight, deep focus, and rigorous tactical problem-solving.
+              </p>
+            </div>
+
+            <!-- Achievement 2: Runner-up in Mad-Ad Competition -->
+            <div class="card honor-card">
+              <div class="honor-header">
+                <span class="honor-badge silver">Runner-Up</span>
+                <span class="honor-year">2024–25</span>
+              </div>
+              <h4 class="honor-title">Runner-up in Mad-Ad Competition</h4>
+              <p class="honor-conferred">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span>Conferred at: <strong>Masturi Fest 2024–25</strong></span>
+              </p>
+              <p class="honor-desc">
+                Recognized for creative spontaneity, rapid marketing ideation, stage performance, and effective collaborative teamwork in a highly competitive inter-collegiate advertising festival.
+              </p>
+            </div>
+
+            <!-- Achievement 3: Naukri Campus Young Turks 2026 -->
+            <div class="card honor-card">
+              <div class="honor-header">
+                <span class="honor-badge gold">National Rank</span>
+                <span class="honor-year">2026</span>
+              </div>
+              <h4 class="honor-title">Naukri Campus Young Turks 2026 Round 1 Achievement</h4>
+              <p class="honor-conferred">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="8" r="6"></circle>
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                </svg>
+                <span>Conferred by: <strong>Naukri Campus</strong></span>
+              </p>
+              <p class="honor-desc">
+                National level Round 1 qualification in technical aptitude, software problem breakdown, and computational reasoning among thousands of participating computing graduates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests, Ambitions & Languages Section -->
+    <section id="interests" class="section interests-section" aria-labelledby="interests-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Career & Horizon</span>
+          </div>
+          <h2 id="interests-heading" class="section-title">Interests & Languages</h2>
+          <p class="section-subtitle">Target developer roles, ongoing technical interests, and spoken language fluencies.</p>
+        </div>
+
+        <div class="interests-grid">
+          <!-- Target Roles Card -->
+          <div class="card interest-card">
+            <div class="interest-card-top">
+              <div class="interest-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="interest-title">Target Roles</h3>
+            </div>
+            <p class="interest-lead">Seeking entry-level and internship developer opportunities in:</p>
+            <div class="pill-cloud">
+              <span class="target-pill">Software Developer</span>
+              <span class="target-pill">Mobile App Developer</span>
+              <span class="target-pill">Web Developer</span>
+              <span class="target-pill">Full-Stack Developer</span>
+              <span class="target-pill">Cloud Engineer</span>
+            </div>
+          </div>
+
+          <!-- Technical Domains of Interest -->
+          <div class="card interest-card">
+            <div class="interest-card-top">
+              <div class="interest-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="interest-title">Technical Domains of Interest</h3>
+            </div>
+            <p class="interest-lead">Key areas of ongoing academic exploration and personal projects:</p>
+            <div class="pill-cloud">
+              <span class="domain-pill">Mobile App Development</span>
+              <span class="domain-pill">Flutter & Android</span>
+              <span class="domain-pill">Web Application Development</span>
+              <span class="domain-pill">Cloud Computing (AWS & GCP)</span>
+              <span class="domain-pill">AI-Driven Applications</span>
+              <span class="domain-pill">Database Management Systems</span>
+              <span class="domain-pill">Software Engineering</span>
+            </div>
+          </div>
+
+          <!-- Spoken Languages & Personal Dimensions -->
+          <div class="card interest-card">
+            <div class="interest-card-top">
+              <div class="interest-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </div>
+              <h3 class="interest-title">Languages & Pursuits</h3>
+            </div>
+            <div class="personal-dim-group">
+              <div class="dim-block">
+                <span class="dim-label">Spoken Languages:</span>
+                <div class="dim-pills">
+                  <span class="lang-tag">English – Fluent</span>
+                  <span class="lang-tag">Hindi – Fluent</span>
+                  <span class="lang-tag">Kannada – Basic Proficiency</span>
+                </div>
+              </div>
+              <div class="dim-block">
+                <span class="dim-label">Extracurricular Pursuits:</span>
+                <div class="dim-pills">
+                  <span class="hobby-tag">♟ Competitive Chess (3x Champion)</span>
+                  <span class="hobby-tag">🎭 Mad-Ad & Creative Media</span>
+                  <span class="hobby-tag">✍ Creative Writing & Poetry</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Direct Social Network Section -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Get In Touch</span>
+          </div>
+          <h2 id="contact-heading" class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">Reach out directly for graduate internships, software opportunities, or academic discussions.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-card card">
+            <h3 class="contact-card-title">Contact Information</h3>
+            <p class="contact-card-sub">
+              I am actively seeking software development roles, internships, and tech collaborations. Reach out directly via email or connect on LinkedIn.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">Direct Email</span>
+                  <a href="mailto:azmiyaaayat62@gmail.com" class="method-link">azmiyaaayat62@gmail.com</a>
+                </div>
+                <button class="icon-btn copy-btn" id="copy-email-card" aria-label="Copy email address" title="Copy email">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">LinkedIn Profile</span>
+                  <a href="https://linkedin.com/in/AzmiyaAayat" target="_blank" rel="noopener noreferrer" class="method-link">linkedin.com/in/AzmiyaAayat</a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">Location</span>
+                  <span class="method-text">Udupi, Karnataka, India</span>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">Current Institute</span>
+                  <span class="method-text">Poornaprajna Institute of Management (PIM)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Profiles Bar -->
+            <div class="quick-profiles">
+              <span class="profiles-heading">Professional Links:</span>
+              <div class="profiles-row">
+                <a href="https://linkedin.com/in/AzmiyaAayat" target="_blank" rel="noopener noreferrer" class="profile-link-btn primary" aria-label="Visit LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+
+                <a href="mailto:azmiyaaayat62@gmail.com" class="profile-link-btn" aria-label="Send direct email">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Email Me</span>
+                </a>
+
+                <a href="https://azmiya-aayat.vercel.app" class="profile-link-btn" aria-label="Portfolio link">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                  <span>Live Site</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-card card">
+            <h3 class="contact-card-title">Send a Direct Message</h3>
+            <p class="contact-card-sub">Compose a direct message; clicking send opens your pre-filled email client to reach Azmiya directly.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name <span class="required-star">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+                <span class="field-error" id="name-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email Address <span class="required-star">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. rahul@example.com" required>
+                <span class="field-error" id="email-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject <span class="required-star">*</span></label>
+                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Software Developer Opportunity" required>
+                <span class="field-error" id="subject-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span class="required-star">*</span></label>
+                <textarea id="contact-message" name="message" rows="4" class="form-textarea" placeholder="Hello Azmiya, I noticed your portfolio and would like to discuss an opportunity..." required></textarea>
+                <span class="field-error" id="message-error" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full form-submit-btn" id="submit-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Send Message via Email</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sticky Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-monogram">AA</div>
+          <div>
+            <h3 class="footer-name">Azmiya Aayat</h3>
+            <p class="footer-tagline">Computer Applications Graduate • MCA Student at PIM Udupi</p>
+            <p class="footer-inst">Poornaprajna Institute of Management (PIM), Udupi, Karnataka, India</p>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <a href="#about" class="footer-link">About</a>
+          <a href="#education" class="footer-link">Education</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#certifications" class="footer-link">Credentials</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> <strong>Azmiya Aayat</strong>. All rights reserved. <a href="https://azmiya-aayat.vercel.app" style="color: inherit; text-decoration: underline;">azmiya-aayat.vercel.app</a>
+        </p>
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal 1: Virtual Assistant Project Detail Modal -->
+  <div id="va-project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="va-modal-title" aria-hidden="true">
+    <div class="modal-dialog card">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-completed">Completed Project</span>
+          <h2 id="va-modal-title" class="modal-title">Virtual Assistant (Voice-Based)</h2>
+          <p class="modal-subtitle">MERN Stack • Google Gemini API • Ollama API • Voice Processing</p>
+        </div>
+        <button class="icon-btn modal-close-btn" id="va-modal-close" aria-label="Close modal dialog">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="arch-box">
+          <h3 class="arch-title">Project Architecture & System Flow</h3>
+          <div class="arch-flow">
+            <div class="arch-node">
+              <span class="node-icon">🎙️</span>
+              <span class="node-title">Voice Input</span>
+              <span class="node-sub">Web Speech API</span>
+            </div>
+            <div class="arch-arrow">➔</div>
+            <div class="arch-node">
+              <span class="node-icon">⚛️</span>
+              <span class="node-title">React UI</span>
+              <span class="node-sub">Tailwind CSS</span>
+            </div>
+            <div class="arch-arrow">➔</div>
+            <div class="arch-node">
+              <span class="node-icon">⚙️</span>
+              <span class="node-title">Node & Express</span>
+              <span class="node-sub">REST Endpoints</span>
+            </div>
+            <div class="arch-arrow">➔</div>
+            <div class="arch-node">
+              <span class="node-icon">🤖</span>
+              <span class="node-title">AI Engine</span>
+              <span class="node-sub">Gemini & Ollama APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>The Challenge & Engineering Solution</h3>
+          <p>
+            Bridging speech recognition with remote AI models introduces network latency challenges. Azmiya engineered an optimized full-stack pipeline coordinating voice transcription with Google Gemini API and fallback to local Ollama endpoints, maintaining continuous conversational responsiveness.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Full Technology Stack</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>Frontend:</strong> React, Tailwind CSS, Web Speech API</div>
+            <div class="tech-item"><strong>Backend:</strong> Node.js, Express.js</div>
+            <div class="tech-item"><strong>Database:</strong> MongoDB & Mongoose ODM</div>
+            <div class="tech-item"><strong>AI APIs:</strong> Google Gemini API, Ollama APIs</div>
+            <div class="tech-item"><strong>Auth & Media:</strong> Google OAuth, Cloudinary Storage</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close-action" id="va-modal-close-footer">Close</button>
+        <a href="mailto:azmiyaaayat62@gmail.com?subject=Inquiry%20About%20Virtual%20Assistant%20Project" class="btn btn-primary">
+          <span>Inquire About Project</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Bus Management System Detail Modal -->
+  <div id="bus-project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="bus-modal-title" aria-hidden="true">
+    <div class="modal-dialog card">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-completed">Completed Project</span>
+          <h2 id="bus-modal-title" class="modal-title">Bus Management System</h2>
+          <p class="modal-subtitle">Web Platform • DBMS / MySQL • Route Scheduling • Passenger Records</p>
+        </div>
+        <button class="icon-btn modal-close-btn" id="bus-modal-close" aria-label="Close modal dialog">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="arch-box">
+          <h3 class="arch-title">Bus Management System Flow</h3>
+          <div class="arch-flow">
+            <div class="arch-node">
+              <span class="node-icon">👤</span>
+              <span class="node-title">Passenger / Admin</span>
+              <span class="node-sub">Schedule Search</span>
+            </div>
+            <div class="arch-arrow">➔</div>
+            <div class="arch-node">
+              <span class="node-icon">🌐</span>
+              <span class="node-title">Web Interface</span>
+              <span class="node-sub">HTML/CSS/JS</span>
+            </div>
+            <div class="arch-arrow">➔</div>
+            <div class="arch-node">
+              <span class="node-icon">⚙️</span>
+              <span class="node-title">Server Logic</span>
+              <span class="node-sub">PHP Processing</span>
+            </div>
+            <div class="arch-arrow">➔</div>
+            <div class="arch-node">
+              <span class="node-icon">🗄️</span>
+              <span class="node-title">Relational DBMS</span>
+              <span class="node-sub">Routes & Passenger Data</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>System Architecture & Features</h3>
+          <p>
+            The Bus Management System was constructed to automate the administration of bus transit networks. It provides administrators with dynamic controls to update route stops, arrival and departure schedules, vehicle numbers, and passenger ticket information with relational data integrity.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Full Technology Stack</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>Database:</strong> Relational DBMS / MySQL (Routes, Schedules, Bookings)</div>
+            <div class="tech-item"><strong>Server-Side:</strong> PHP backend request processing</div>
+            <div class="tech-item"><strong>Frontend:</strong> HTML5, CSS3, JavaScript</div>
+            <div class="tech-item"><strong>Features:</strong> Route lookup, timetable scheduling, seat availability, ticket logs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close-action" id="bus-modal-close-footer">Close</button>
+        <a href="mailto:azmiyaaayat62@gmail.com?subject=Inquiry%20About%20Bus%20Management%20System" class="btn btn-primary">
+          <span>Inquire About Project</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Scratch Shooting Bird Modal -->
+  <div id="scratch-project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="scratch-modal-title" aria-hidden="true">
+    <div class="modal-dialog card">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-completed">Completed Project</span>
+          <h2 id="scratch-modal-title" class="modal-title">Scratch Shooting Bird</h2>
+          <p class="modal-subtitle">Interactive Game • Event Loops • Sprite Motion • Collision Detection</p>
+        </div>
+        <button class="icon-btn modal-close-btn" id="scratch-modal-close" aria-label="Close modal dialog">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Game Architecture & Event Execution</h3>
+          <p>
+            Developed using visual logic blocks in Scratch to demonstrate fundamental software concepts: game ticks, coordinate velocity, bounding box collision checks, audio triggers, and score state management.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Key Mechanical Details</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>Target Trajectory:</strong> Variable speed horizontal and vertical flight loops</div>
+            <div class="tech-item"><strong>Player Interaction:</strong> Crosshair mouse coordinate tracking and click firing</div>
+            <div class="tech-item"><strong>Collision Logic:</strong> Sprite touch sensing and coordinate boundaries</div>
+            <div class="tech-item"><strong>Game State:</strong> Progressive score counter, hit-miss ratios, and restart states</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close-action" id="scratch-modal-close-footer">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Animation Video Website Modal -->
+  <div id="anim-project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="anim-modal-title" aria-hidden="true">
+    <div class="modal-dialog card">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-completed">Completed Project</span>
+          <h2 id="anim-modal-title" class="modal-title">Animation Video Website</h2>
+          <p class="modal-subtitle">Frontend UI • CSS3 Keyframe Animations • Multimedia Embeds</p>
+        </div>
+        <button class="icon-btn modal-close-btn" id="anim-modal-close" aria-label="Close modal dialog">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Frontend Showcase & Design Engineering</h3>
+          <p>
+            An aesthetic website built using semantic HTML5, CSS3 transitions, and JavaScript. Designed to present animated videos and multimedia content with hardware-accelerated animations and mobile responsiveness.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Core Technical Deliverables</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>CSS3 Animations:</strong> Transforms, keyframe loops, and smooth easing transitions</div>
+            <div class="tech-item"><strong>Responsive Layout:</strong> Flexbox and CSS Grid gallery layout</div>
+            <div class="tech-item"><strong>JavaScript Logic:</strong> Interactive modals, video playback controls, and filters</div>
+            <div class="tech-item"><strong>Cross-Device Compatibility:</strong> Optimized viewport performance on all displays</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close-action" id="anim-modal-close-footer">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Downloadable / Printable Resume Modal -->
+  <div id="resume-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title" aria-hidden="true">
+    <div class="modal-dialog resume-dialog card">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-primary">Curriculum Vitae</span>
+          <h2 id="resume-modal-title" class="modal-title">Azmiya Aayat — Professional Resume</h2>
+          <p class="modal-subtitle">MCA Student • Poornaprajna Institute of Management (PIM)</p>
+        </div>
+        <div class="modal-actions-right">
+          <!-- Direct ATS HTML Download Button -->
+          <a href="Azmiya_Aayat_Resume.html" download="Azmiya_Aayat_Resume.html" class="btn btn-outline btn-sm" id="download-ats-file-btn" title="Download ATS Resume HTML">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download HTML</span>
+          </a>
+
+          <!-- Direct ATS Text Download Button -->
+          <a href="Azmiya_Aayat_Resume.txt" download="Azmiya_Aayat_Resume.txt" class="btn btn-outline btn-sm" id="download-ats-txt-btn" title="Download ATS Resume Plain Text">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            <span>Download Text</span>
+          </a>
+
+          <!-- Print / Save as PDF Button -->
+          <button class="btn btn-primary btn-sm" id="print-resume-btn">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print / Save PDF</span>
+          </button>
+          
+          <button class="icon-btn modal-close-btn" id="resume-modal-close" aria-label="Close resume preview">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body resume-body" id="resume-printable-area">
+        <!-- Resume Sheet -->
+        <div class="resume-sheet">
+          <div class="resume-top">
+            <h1 class="resume-name">Azmiya Aayat</h1>
+            <p class="resume-headline">Computer Applications Graduate | Currently Pursuing MCA | Aspiring Software Developer</p>
+            <div class="resume-contact-bar">
+              <span>📍 Udupi, Karnataka, India</span>
+              <span>•</span>
+              <a href="mailto:azmiyaaayat62@gmail.com">azmiyaaayat62@gmail.com</a>
+              <span>•</span>
+              <a href="https://linkedin.com/in/AzmiyaAayat" target="_blank" rel="noopener noreferrer">linkedin.com/in/AzmiyaAayat</a>
+              <span>•</span>
+              <a href="https://azmiya-aayat.vercel.app" target="_blank" rel="noopener noreferrer">azmiya-aayat.vercel.app</a>
+            </div>
+          </div>
+
+          <!-- Summary -->
+          <div class="resume-section">
+            <h2 class="resume-sec-title">Professional Summary</h2>
+            <p class="resume-text">
+              I am a Computer Applications graduate currently pursuing MCA, with an active interest in software development, mobile application development, web technologies, cloud computing, and AI-driven applications. Driven by high curiosity to master new tools and technologies, I approach technical challenges with an analytical, problem-solving mindset and a strong commitment to learning and building scalable software solutions.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="resume-section">
+            <h2 class="resume-sec-title">Education</h2>
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Master of Computer Applications (MCA)</strong>
+                <span class="resume-dates">2026 – Present (Pursuing)</span>
+              </div>
+              <div class="resume-inst">Poornaprajna Institute of Management (PIM), Udupi, Karnataka</div>
+              <div class="resume-spec">Specialization: Computer Applications & Software Development</div>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Bachelor of Computer Applications (BCA)</strong>
+                <span class="resume-dates">Completed</span>
+              </div>
+              <div class="resume-inst">St. Mary's College, Shirva, Karnataka</div>
+              <div class="resume-spec">Specialization: Computer Applications & Software Foundations</div>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Pre-University Course (PUC)</strong>
+                <span class="resume-dates">Completed</span>
+              </div>
+              <div class="resume-inst">Govt. PU College, Udupi, Karnataka</div>
+              <div class="resume-spec">Foundational Academic & Quantitative Education</div>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="resume-section">
+            <h2 class="resume-sec-title">Technical Skills & Categories</h2>
+            <ul class="resume-bullet-list">
+              <li><strong>Programming Languages:</strong> Java, C, C++, C#, Python, Kotlin</li>
+              <li><strong>Database:</strong> DBMS (Relational Database Design, SQL, Normalization, Queries)</li>
+              <li><strong>Development Tools:</strong> Android Studio, IntelliJ IDEA, VS Code, Git, GitHub</li>
+              <li><strong>Learning & Technology Interests:</strong> Flutter, Android Development, Web Application Development, Cloud Technologies (AWS & Google Cloud)</li>
+            </ul>
+          </div>
+
+          <!-- Projects -->
+          <div class="resume-section">
+            <h2 class="resume-sec-title">Featured Projects</h2>
+            
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Bus Management System</strong>
+                <span class="resume-dates">Web & DBMS</span>
+              </div>
+              <p class="resume-text">
+                Web-based platform developed using HTML, CSS, JavaScript, PHP, and MySQL / DBMS to manage bus routes, timetables, ticket records, and passenger information.
+              </p>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Virtual Assistant (Voice-Based Interactive Assistant)</strong>
+                <span class="resume-dates">MERN & Voice AI</span>
+              </div>
+              <p class="resume-text">
+                Full-stack voice-interactive web assistant built with the MERN stack (MongoDB, Express.js, React, Node.js) and Tailwind CSS. Integrated Google Gemini and Ollama APIs for natural language comprehension and voice responses. Features Google OAuth and Cloudinary storage. Built entirely from scratch.
+              </p>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Scratch Shooting Bird</strong>
+                <span class="resume-dates">Interactive Game</span>
+              </div>
+              <p class="resume-text">
+                Interactive shooting game developed using Scratch. Engineered coordinate tracking, projectile flight physics, collision detection, and dynamic score algorithms.
+              </p>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Animation Video Website</strong>
+                <span class="resume-dates">Frontend & Media</span>
+              </div>
+              <p class="resume-text">
+                Website developed using HTML, CSS, and JavaScript to showcase animations and multimedia content. Integrated custom CSS3 keyframes, video players, and responsive media galleries.
+              </p>
+            </div>
+          </div>
+
+          <!-- Certifications & Honors -->
+          <div class="resume-section">
+            <h2 class="resume-sec-title">Certifications & Achievements</h2>
+            <ul class="resume-bullet-list">
+              <li><strong>Cloud Computing on AWS:</strong> Comprehensive training on AWS architecture, core compute, S3, and cloud infrastructure.</li>
+              <li><strong>Cloud Computing on Google Cloud:</strong> Practical training on Google Cloud Platform (GCP) compute, storage, and networking.</li>
+              <li><strong>Naukri Campus Young Turks 2026 – Round 1 Achievement Certificate:</strong> National level technology and aptitude assessment.</li>
+              <li><strong>Winner in Inter-Class Chess Competition:</strong> Conferred for three consecutive years (St. Mary's College, Shirva).</li>
+              <li><strong>Runner-up in Mad-Ad Competition:</strong> Masturi Fest 2024–25 inter-collegiate advertising festival.</li>
+            </ul>
+          </div>
+
+          <!-- Languages & Hobbies -->
+          <div class="resume-section">
+            <h2 class="resume-sec-title">Languages & Extracurriculars</h2>
+            <p class="resume-text">
+              <strong>Languages:</strong> English (Fluent), Hindi (Fluent), Kannada (Basic proficiency) | <strong>Hobbies:</strong> Chess (3-Year Champion), Creative Writing & Poetry
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close-action" id="resume-modal-close-footer">Close</button>
+        <a href="Azmiya_Aayat_Resume.html" download="Azmiya_Aayat_Resume.html" class="btn btn-outline" id="resume-download-html-footer">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download Resume File</span>
+        </a>
+        <button class="btn btn-primary" id="resume-print-footer">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Print / Save as PDF</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

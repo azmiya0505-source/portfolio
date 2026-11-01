@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azmiya Aayat - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm 15mm;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1e293b;
+      background: #f8fafc;
+      line-height: 1.5;
+      font-size: 13.5px;
+      padding: 24px;
+    }
+    .resume-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px 36px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+    }
+    .name {
+      font-size: 26px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+    }
+    .headline {
+      font-size: 14px;
+      font-weight: 600;
+      color: #0284c7;
+      margin-top: 2px;
+      margin-bottom: 8px;
+    }
+    .contact-line {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 12.5px;
+      color: #475569;
+    }
+    .contact-line a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-line a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 15px;
+    }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .summary-text {
+      color: #334155;
+      text-align: justify;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .item {
+      margin-bottom: 10px;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 13.5px;
+    }
+    .item-title {
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .item-date {
+      font-size: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #64748b;
+      font-weight: 500;
+    }
+    .item-sub {
+      font-size: 12.5px;
+      color: #0284c7;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .item-desc {
+      font-size: 12.5px;
+      color: #334155;
+      line-height: 1.5;
+    }
+    .bullet-list {
+      padding-left: 18px;
+      margin-top: 3px;
+    }
+    .bullet-list li {
+      margin-bottom: 3px;
+      font-size: 12.5px;
+      color: #334155;
+      line-height: 1.45;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 5px 12px;
+      font-size: 12.5px;
+    }
+    .skill-cat {
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .skill-vals {
+      color: #334155;
+    }
+    .print-bar {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .btn-print {
+      background: #0284c7;
+      color: #ffffff;
+      padding: 9px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-print:hover {
+      background: #0369a1;
+    }
+    .btn-back {
+      background: #e2e8f0;
+      color: #334155;
+      padding: 9px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-back:hover {
+      background: #cbd5e1;
+    }
+    @media print {
+      body {
+        padding: 0;
+        background: #ffffff;
+      }
+      .resume-wrapper {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .print-bar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-bar">
+    <button class="btn-print" onclick="window.print()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+      Print / Save as PDF
+    </button>
+    <a href="index.html" class="btn-back">
+      &larr; Back to Portfolio
+    </a>
+  </div>
+
+  <div class="resume-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="name">Azmiya Aayat</h1>
+      <div class="headline">Computer Applications Graduate | Currently Pursuing MCA | Aspiring Software Developer</div>
+      <div class="contact-line">
+        <span>📍 Udupi, Karnataka, India</span>
+        <span>•</span>
+        <span>✉️ <a href="mailto:azmiyaaayat62@gmail.com">azmiyaaayat62@gmail.com</a></span>
+        <span>•</span>
+        <span>🔗 <a href="https://linkedin.com/in/AzmiyaAayat" target="_blank" rel="noopener noreferrer">linkedin.com/in/AzmiyaAayat</a></span>
+        <span>•</span>
+        <span>🌐 <a href="https://azmiya-aayat.vercel.app" target="_blank" rel="noopener noreferrer">azmiya-aayat.vercel.app</a></span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary-text">
+        I am a Computer Applications graduate currently pursuing MCA, with an active interest in software development, mobile application development, web technologies, cloud computing, and AI-driven applications. Driven by high curiosity to master new tools and technologies, I approach technical challenges with an analytical, problem-solving mindset and a strong commitment to learning and building scalable software solutions.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Master of Computer Applications (MCA)</span>
+          <span class="item-date">2026 – Present (Pursuing)</span>
+        </div>
+        <div class="item-sub">Poornaprajna Institute of Management (PIM), Udupi, Karnataka</div>
+        <div class="item-desc">Advanced graduate coursework in software engineering, full-stack application development, database management systems, and emerging cloud technologies.</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Bachelor of Computer Applications (BCA)</span>
+          <span class="item-date">Completed</span>
+        </div>
+        <div class="item-sub">St. Mary's College, Shirva, Karnataka</div>
+        <div class="item-desc">Core curriculum in computer science fundamentals: object-oriented programming (C++, Java), web technologies (HTML, CSS, JavaScript), database management (DBMS/SQL), and data structures.</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Pre-University Course (PUC)</span>
+          <span class="item-date">Completed</span>
+        </div>
+        <div class="item-sub">Govt. PU College, Udupi, Karnataka</div>
+        <div class="item-desc">Pre-university academic education establishing strong quantitative foundation and analytical aptitude.</div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-cat">Programming:</span>
+        <span class="skill-vals">Java, C, C++, C#, Python, Kotlin</span>
+
+        <span class="skill-cat">Database:</span>
+        <span class="skill-vals">DBMS (Relational Database Design, SQL, Normalization, Queries)</span>
+
+        <span class="skill-cat">Development Tools:</span>
+        <span class="skill-vals">Android Studio, IntelliJ IDEA, VS Code, Git, GitHub</span>
+
+        <span class="skill-cat">Learning Interests:</span>
+        <span class="skill-vals">Flutter, Android Development, Web Application Development, Cloud Technologies (AWS & Google Cloud)</span>
+      </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section class="section">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Bus Management System</span>
+          <span class="item-date">Web & Database</span>
+        </div>
+        <div class="item-sub">Tech: HTML, CSS, JavaScript, PHP, DBMS / MySQL</div>
+        <ul class="bullet-list">
+          <li>Architected a comprehensive web-based platform to manage bus routes, schedules, and passenger details.</li>
+          <li>Constructed relational database tables for efficient timetable queries, fare management, and ticket reservation records.</li>
+          <li>Designed a clean, responsive front-end interface ensuring seamless schedule lookups across devices.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Virtual Assistant (Voice-Based Assistant)</span>
+          <span class="item-date">MERN & Voice AI</span>
+        </div>
+        <div class="item-sub">Tech: React, Node.js, Express.js, MongoDB, Tailwind CSS, Google Gemini API, Ollama API</div>
+        <ul class="bullet-list">
+          <li>Developed a full-stack conversational voice assistant utilizing the MERN stack with natural language comprehension.</li>
+          <li>Integrated Google Gemini and Ollama APIs to streamline voice prompt interpretation and low-latency feedback.</li>
+          <li>Implemented secure Google OAuth authentication and Cloudinary media management. Built 100% independently.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Scratch Shooting Bird</span>
+          <span class="item-date">Interactive Game</span>
+        </div>
+        <div class="item-sub">Tech: Scratch, Event-Driven Game Logic, Coordinate Motion Algorithms</div>
+        <ul class="bullet-list">
+          <li>Engineered an engaging interactive shooting game featuring coordinate tracking and sprite collision detection.</li>
+          <li>Programmed dynamic game loops, player score tracking, sound triggers, and progressive difficulty.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Animation Video Website</span>
+          <span class="item-date">Frontend & Multimedia</span>
+        </div>
+        <div class="item-sub">Tech: HTML5, CSS3 Keyframes, JavaScript, Responsive Multimedia UI</div>
+        <ul class="bullet-list">
+          <li>Designed and built an interactive multimedia website showcasing custom CSS animations and video content.</li>
+          <li>Optimized layout responsiveness and multimedia controls for fluid playback across mobile, tablet, and desktop.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+      <h2 class="section-title">Certifications</h2>
+      <ul class="bullet-list">
+        <li><strong>Cloud Computing on AWS:</strong> Comprehensive training on AWS architecture, EC2, S3, cloud security, and distributed computing essentials.</li>
+        <li><strong>Cloud Computing on Google Cloud:</strong> Practical training on Google Cloud Platform (GCP) infrastructure, compute services, and cloud storage.</li>
+        <li><strong>Naukri Campus Young Turks 2026 – Round 1 Achievement Certificate:</strong> Recognized in national-level technology and problem-solving assessment.</li>
+        <li><strong>Introduction to AI & AI for All:</strong> Infosys Springboard certifications covering machine learning fundamentals, ethics, and AI concepts.</li>
+      </ul>
+    </section>
+
+    <!-- Achievements & Honors -->
+    <section class="section">
+      <h2 class="section-title">Achievements & Honors</h2>
+      <ul class="bullet-list">
+        <li><strong>Winner in Inter-Class Chess Competition:</strong> Conferred for three consecutive years (St. Mary's College, Shirva) demonstrating sustained analytical foresight and strategic problem solving.</li>
+        <li><strong>Runner-up in Mad-Ad Competition:</strong> Masturi Fest 2024–25 — Recognized for creative spontaneity, rapid ideation, and collaborative stage presentation.</li>
+        <li><strong>Naukri Campus Young Turks 2026 Round 1 Achievement:</strong> High-percentile accomplishment in competitive technical aptitude and logical reasoning.</li>
+      </ul>
+    </section>
+
+    <!-- Languages -->
+    <section class="section">
+      <h2 class="section-title">Languages</h2>
+      <p class="summary-text">
+        <strong>English:</strong> Fluent (Professional & Technical) &nbsp;|&nbsp; 
+        <strong>Hindi:</strong> Fluent (Conversational & Spoken) &nbsp;|&nbsp; 
+        <strong>Kannada:</strong> Basic Proficiency (Regional)
+      </p>
+    </section>
+  </div>
+
+</body>
+</html>

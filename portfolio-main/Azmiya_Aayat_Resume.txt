@@ -1,0 +1,94 @@
+================================================================================
+                                AZMIYA AAYAT
+================================================================================
+Location: Udupi, Karnataka, India
+Email: azmiyaaayat62@gmail.com
+LinkedIn: https://linkedin.com/in/AzmiyaAayat
+Portfolio: https://azmiya-aayat.vercel.app
+
+--------------------------------------------------------------------------------
+PROFESSIONAL SUMMARY
+--------------------------------------------------------------------------------
+I am a Computer Applications graduate currently pursuing MCA, with an active 
+interest in software development, mobile application development, web technologies, 
+cloud computing, and AI-driven applications. Driven by high curiosity to master new 
+tools and technologies, I approach technical challenges with an analytical, problem-
+solving mindset and a strong commitment to learning and building scalable software 
+solutions.
+
+--------------------------------------------------------------------------------
+EDUCATION
+--------------------------------------------------------------------------------
+* Master of Computer Applications (MCA) – Currently Pursuing (2026 – Present)
+  Poornaprajna Institute of Management (PIM), Udupi, Karnataka
+  Specialization: Computer Applications & Software Engineering
+
+* Bachelor of Computer Applications (BCA) – Completed (2023 – 2026)
+  St. Mary's College, Shirva, Karnataka
+  Specialization: Computer Applications
+
+* Pre-University Course (PUC) – Completed
+  Govt. PU College, Udupi, Karnataka
+
+--------------------------------------------------------------------------------
+TECHNICAL SKILLS
+--------------------------------------------------------------------------------
+* Programming Languages: Java, C, C++, C#, Python, Kotlin
+* Database: DBMS (Relational Database Design, SQL, Normalization, Queries)
+* Development Tools: Android Studio, IntelliJ IDEA, VS Code, Git, GitHub
+* Learning & Technology Interests: Flutter, Android Development, Web Application 
+  Development, Cloud Technologies (AWS & Google Cloud)
+
+--------------------------------------------------------------------------------
+FEATURED PROJECTS
+--------------------------------------------------------------------------------
+* Bus Management System
+  Technologies: HTML, CSS, JavaScript, PHP, DBMS / MySQL
+  - Web-based platform to manage bus routes, schedules, and passenger information.
+  - Designed relational database tables for route tracking, timetable lookups, 
+    fare calculations, and ticket reservation records.
+  - Implemented responsive front-end interface for schedule search and booking.
+
+* Virtual Assistant (Voice-Based Interactive Assistant)
+  Technologies: MERN Stack (React, Node.js, Express.js, MongoDB), Tailwind CSS, 
+                Google Gemini API, Ollama API, Google OAuth, Cloudinary
+  - Full-stack conversational voice assistant with natural language comprehension.
+  - Engineered low-latency voice query routing to Gemini and local Ollama APIs.
+  - Independently designed and built end-to-end full stack architecture.
+
+* Scratch Shooting Bird
+  Technologies: Scratch, Event-Driven Game Loops, Algorithmic Motion Logic
+  - Interactive shooting game featuring coordinate tracking and collision detection.
+  - Programmed flight paths, dynamic score computation, and sound event triggers.
+
+* Animation Video Website
+  Technologies: HTML5, CSS3 Keyframes, JavaScript, Responsive Multimedia
+  - Website showcasing fluid CSS3 animations and curated video multimedia content.
+  - Optimized cross-device responsiveness and interactive video player controls.
+
+--------------------------------------------------------------------------------
+CERTIFICATIONS
+--------------------------------------------------------------------------------
+* Cloud Computing on AWS
+* Cloud Computing on Google Cloud
+* Naukri Campus Young Turks 2026 – Round 1 Achievement Certificate
+* Introduction to AI – Infosys Springboard
+* AI for All – Infosys Springboard
+
+--------------------------------------------------------------------------------
+ACHIEVEMENTS & HONORS
+--------------------------------------------------------------------------------
+* Winner in Inter-Class Chess Competition for three consecutive years 
+  (St. Mary's College, Shirva) – Demonstrating analytical foresight and strategy.
+* Runner-up in Mad-Ad Competition at Masturi Fest 2024–25 – Recognized for 
+  creative spontaneity, rapid ideation, and collaborative stage execution.
+* Naukri Campus Young Turks 2026 Round 1 Achievement – High percentile 
+  performance in national technical aptitude and logical reasoning.
+
+--------------------------------------------------------------------------------
+LANGUAGES
+--------------------------------------------------------------------------------
+* English: Fluent (Professional & Technical)
+* Hindi: Fluent (Conversational)
+* Kannada: Basic Proficiency (Regional)
+================================================================================
