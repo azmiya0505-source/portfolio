@@ -2890,25 +2890,37 @@ button {
    18. Print Media Styles (Optimized for Resume Export)
    -------------------------------------------------------------------------- */
 @media print {
-  body {
-    background: #ffffff !important;
-    color: #000000 !important;
+  @page {
+    size: A4 portrait;
+    margin: 10mm 14mm;
   }
 
+  /* Force background and full-height flow */
+  html,
+  body {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100% !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 13px !important;
+  }
+
+  /* Hide entire portfolio website background and UI chrome */
+  #header,
   .site-header,
+  #main-content,
+  .stats-ribbon-wrapper,
+  .stats-ribbon,
   .site-footer,
-  .hero-section,
-  .about-section,
-  .education-section,
-  .skills-section,
-  .projects-section,
-  .cert-section,
-  .interests-section,
-  .contact-section,
-  .modal-actions-right,
-  .modal-footer,
-  .modal-close-btn,
+  .drawer-backdrop,
+  .mobile-drawer,
   .toast-container,
+  .cursor-glow,
+  .skip-link,
   #va-project-modal,
   #bus-project-modal,
   #scratch-project-modal,
@@ -2916,42 +2928,183 @@ button {
     display: none !important;
   }
 
+  /* Ensure resume modal is the only visible element and flows as regular document */
   #resume-modal {
     display: block !important;
     position: static !important;
-    background: none !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
     opacity: 1 !important;
+    visibility: visible !important;
     padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
   }
 
-  .modal-dialog {
+  /* Hide modal UI header, actions, and buttons */
+  #resume-modal .modal-header,
+  #resume-modal .modal-footer,
+  #resume-modal .modal-close-btn,
+  #resume-modal .modal-actions-right,
+  #resume-modal .modal-close-action {
+    display: none !important;
+  }
+
+  /* Remove dialog box constraints and shadows */
+  #resume-modal .modal-dialog,
+  #resume-modal.modal-backdrop .modal-dialog,
+  .resume-dialog {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
     max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
     box-shadow: none !important;
     border: none !important;
+    background: transparent !important;
     transform: none !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
   }
 
-  .modal-header {
-    border: none !important;
-    padding: 0 0 1rem 0 !important;
+  /* Expand body container to flow across multiple pages without scrollbars */
+  #resume-modal .modal-body,
+  #resume-modal .resume-body,
+  #resume-printable-area {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
+  /* Resume Sheet Layout */
   .resume-sheet {
     border: none !important;
+    box-shadow: none !important;
     padding: 0 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .resume-top {
+    text-align: center !important;
+    padding-bottom: 0.75rem !important;
+    margin-bottom: 1rem !important;
+    border-bottom: 2px solid #0284c7 !important;
+    break-after: avoid !important;
+    page-break-after: avoid !important;
   }
 
   .resume-name {
-    color: #000000 !important;
+    font-size: 1.75rem !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    margin-bottom: 3px !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  .resume-headline {
+    font-size: 0.9rem !important;
+    color: #0284c7 !important;
+    font-weight: 600 !important;
+    margin-bottom: 5px !important;
+  }
+
+  .resume-contact-bar {
+    font-size: 0.8rem !important;
+    color: #475569 !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .resume-contact-bar a {
+    color: #0284c7 !important;
+    text-decoration: none !important;
+  }
+
+  .resume-section {
+    margin-bottom: 1.1rem !important;
+    break-inside: auto;
+    page-break-inside: auto;
   }
 
   .resume-sec-title {
-    color: #000000 !important;
-    border-bottom: 1px solid #333333 !important;
+    font-size: 0.92rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.07em !important;
+    color: #0f172a !important;
+    border-bottom: 1.5px solid #0284c7 !important;
+    padding-bottom: 2px !important;
+    margin-bottom: 0.55rem !important;
+    break-after: avoid !important;
+    page-break-after: avoid !important;
   }
 
-  .resume-headline, .resume-inst {
+  .resume-item {
+    margin-bottom: 0.75rem !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .resume-item-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    font-size: 0.88rem !important;
+    color: #0f172a !important;
+  }
+
+  .resume-dates {
+    font-size: 0.8rem !important;
+    color: #475569 !important;
+    font-family: inherit !important;
+  }
+
+  .resume-inst {
+    font-size: 0.84rem !important;
     color: #0284c7 !important;
+    font-weight: 600 !important;
+  }
+
+  .resume-spec {
+    font-size: 0.8rem !important;
+    color: #64748b !important;
+  }
+
+  .resume-text {
+    font-size: 0.82rem !important;
+    color: #334155 !important;
+    line-height: 1.5 !important;
+    text-align: justify !important;
+  }
+
+  .resume-bullet-list {
+    padding-left: 1.25rem !important;
+    margin-top: 3px !important;
+  }
+
+  .resume-bullet-list li {
+    font-size: 0.82rem !important;
+    color: #334155 !important;
+    line-height: 1.45 !important;
+    margin-bottom: 0.25rem !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
   }
 }
 
