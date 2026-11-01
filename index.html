@@ -628,280 +628,527 @@
         <div class="filter-tabs-container">
           <div class="tabs-scroll" role="tablist" aria-label="Skills Category Filter">
             <button class="tab-btn active" role="tab" aria-selected="true" data-filter="all">All Skills</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-filter="programming">Programming</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-filter="database">Database (DBMS)</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-filter="tools">Development Tools</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-filter="learning">Learning Interests</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="core-lang">Core Languages</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="web">Web Technologies</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="tools">Tools &amp; Platforms</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="other">Other</button>
           </div>
         </div>
 
         <!-- Skills Grid -->
         <div class="skills-grid" id="skills-grid">
           
-          <!-- Category: Programming - Java -->
-          <div class="skill-card card" data-category="programming">
-            <div class="skill-top">
-              <div class="skill-icon-wrap lang-icon">
-                <span class="code-symbol">☕</span>
-              </div>
-              <div class="skill-meta">
-                <h3 class="skill-name">Java</h3>
-                <span class="skill-cat-label">Programming Language</span>
-              </div>
-              <span class="badge badge-basic">Core Skill</span>
-            </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Java proficiency 65%">
-              <div class="meter-bar meter-basic" style="width: 65%;"></div>
-            </div>
-            <p class="skill-detail">Object-oriented paradigms, classes, inheritance, JVM architecture, exception handling, and application structure.</p>
-          </div>
+          <!-- ===== CORE LANGUAGES ===== -->
 
-          <!-- Category: Programming - C -->
-          <div class="skill-card card" data-category="programming">
+          <!-- C -->
+          <div class="skill-card card" data-category="core-lang">
             <div class="skill-top">
-              <div class="skill-icon-wrap lang-icon">
-                <span class="code-symbol">&lt;C&gt;</span>
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe)">
+                <span class="code-symbol" style="font-size:0.75rem;font-weight:800;color:#1d4ed8">&lt;C&gt;</span>
               </div>
               <div class="skill-meta">
                 <h3 class="skill-name">C</h3>
-                <span class="skill-cat-label">Programming Language</span>
+                <span class="skill-cat-label">Core Language</span>
               </div>
-              <span class="badge badge-basic">Core Skill</span>
+              <span class="badge badge-basic">Basic</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="C proficiency 60%">
-              <div class="meter-bar meter-basic" style="width: 60%;"></div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="C proficiency">
+              <div class="meter-bar meter-basic" style="width: 55%;"></div>
             </div>
-            <p class="skill-detail">Procedural fundamentals, memory concepts, pointer arithmetic, structures, and foundational algorithms.</p>
+            <p class="skill-detail">Procedural fundamentals, memory concepts, pointers, and algorithmic structures in academic labs.</p>
           </div>
 
-          <!-- Category: Programming - C++ -->
-          <div class="skill-card card" data-category="programming">
+          <!-- C++ -->
+          <div class="skill-card card" data-category="core-lang">
             <div class="skill-top">
-              <div class="skill-icon-wrap lang-icon">
-                <span class="code-symbol">C++</span>
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe)">
+                <span class="code-symbol" style="font-size:0.78rem;font-weight:800;color:#1d4ed8">C++</span>
               </div>
               <div class="skill-meta">
                 <h3 class="skill-name">C++</h3>
-                <span class="skill-cat-label">Programming Language</span>
+                <span class="skill-cat-label">Core Language</span>
               </div>
-              <span class="badge badge-basic">Core Skill</span>
+              <span class="badge badge-basic">Basic</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="C++ proficiency 60%">
-              <div class="meter-bar meter-basic" style="width: 60%;"></div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="C++ proficiency">
+              <div class="meter-bar meter-basic" style="width: 55%;"></div>
             </div>
-            <p class="skill-detail">Object-oriented concepts, polymorphism, encapsulation, file I/O, and data structure implementations.</p>
+            <p class="skill-detail">Object-oriented paradigms, classes, inheritance, polymorphism, and problem solving.</p>
           </div>
 
-          <!-- Category: Programming - C# -->
-          <div class="skill-card card" data-category="programming">
+          <!-- Java -->
+          <div class="skill-card card" data-category="core-lang">
             <div class="skill-top">
-              <div class="skill-icon-wrap lang-icon">
-                <span class="code-symbol">C#</span>
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe)">
+                <span class="code-symbol">&#9749;</span>
               </div>
               <div class="skill-meta">
-                <h3 class="skill-name">C#</h3>
-                <span class="skill-cat-label">Programming (.NET)</span>
+                <h3 class="skill-name">Java</h3>
+                <span class="skill-cat-label">Core Language</span>
               </div>
-              <span class="badge badge-basic">Core Skill</span>
+              <span class="badge badge-basic">Basic</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="C# proficiency 50%">
-              <div class="meter-bar meter-basic" style="width: 50%;"></div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Java proficiency">
+              <div class="meter-bar meter-basic" style="width: 60%;"></div>
             </div>
-            <p class="skill-detail">Typed variable management, class hierarchies, component structures, and object-oriented software practices.</p>
+            <p class="skill-detail">OOP concepts, JVM architecture, exception handling, and core Java library fundamentals.</p>
           </div>
 
-          <!-- Category: Programming - Python -->
-          <div class="skill-card card" data-category="programming">
+          <!-- Python -->
+          <div class="skill-card card" data-category="core-lang">
             <div class="skill-top">
-              <div class="skill-icon-wrap lang-icon">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0)">
                 <span class="code-symbol">🐍</span>
               </div>
               <div class="skill-meta">
                 <h3 class="skill-name">Python</h3>
-                <span class="skill-cat-label">Programming Language</span>
+                <span class="skill-cat-label">Core Language</span>
               </div>
-              <span class="badge badge-basic">Core Skill</span>
+              <span class="badge badge-basic">Basic</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency 60%">
+            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency">
               <div class="meter-bar meter-basic" style="width: 60%;"></div>
             </div>
-            <p class="skill-detail">Scripting, algorithmic logic, data structures, automation workflows, and introductory AI model integrations.</p>
+            <p class="skill-detail">Scripting, data structures, automation basics, and introductory AI model interactions.</p>
           </div>
 
-          <!-- Category: Programming - Kotlin -->
-          <div class="skill-card card" data-category="programming">
+          <!-- JavaScript -->
+          <div class="skill-card card" data-category="core-lang">
             <div class="skill-top">
-              <div class="skill-icon-wrap lang-icon">
-                <span class="code-symbol">KT</span>
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#fef9c3,#fde68a)">
+                <span class="code-symbol" style="font-size:0.78rem;font-weight:800;color:#92400e">JS</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">JavaScript</h3>
+                <span class="skill-cat-label">Language &amp; Web</span>
+              </div>
+              <span class="badge badge-basic">Basic</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency">
+              <div class="meter-bar meter-basic" style="width: 58%;"></div>
+            </div>
+            <p class="skill-detail">Modern ES6+ syntax, DOM manipulation, asynchronous promises, fetch API, and event logic.</p>
+          </div>
+
+          <!-- PHP -->
+          <div class="skill-card card" data-category="core-lang">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#e0e7ff,#c7d2fe)">
+                <span class="code-symbol" style="font-size:0.68rem;font-weight:800;color:#4338ca">PHP</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">PHP</h3>
+                <span class="skill-cat-label">Server Scripting</span>
+              </div>
+              <span class="badge badge-basic">Basic</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="PHP proficiency">
+              <div class="meter-bar meter-basic" style="width: 50%;"></div>
+            </div>
+            <p class="skill-detail">Server-side request handling, session management, and relational database connectivity.</p>
+          </div>
+
+          <!-- C# -->
+          <div class="skill-card card" data-category="core-lang">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#fff7ed,#fed7aa)">
+                <span class="code-symbol" style="font-size:0.78rem;font-weight:800;color:#c2410c">C#</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">C#</h3>
+                <span class="skill-cat-label">Language (.NET)</span>
+              </div>
+              <span class="badge badge-beginner">Beginner</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" aria-label="C# proficiency">
+              <div class="meter-bar meter-beginner" style="width: 35%;"></div>
+            </div>
+            <p class="skill-detail">Introductory C# syntax, typed variables, and basic object-oriented principles.</p>
+          </div>
+
+          <!-- Kotlin -->
+          <div class="skill-card card" data-category="core-lang">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#fff7ed,#fed7aa)">
+                <span class="code-symbol" style="font-size:0.78rem;font-weight:800;color:#c2410c">KT</span>
               </div>
               <div class="skill-meta">
                 <h3 class="skill-name">Kotlin</h3>
                 <span class="skill-cat-label">Mobile Language</span>
               </div>
-              <span class="badge badge-basic">Core Skill</span>
+              <span class="badge badge-beginner">Beginner</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Kotlin proficiency 50%">
-              <div class="meter-bar meter-basic" style="width: 50%;"></div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" aria-label="Kotlin proficiency">
+              <div class="meter-bar meter-beginner" style="width: 35%;"></div>
             </div>
-            <p class="skill-detail">Modern Android programming syntax, null safety, coroutine concepts, and mobile application lifecycle explorations.</p>
+            <p class="skill-detail">Modern Android programming syntax, null safety, and mobile app lifecycle explorations.</p>
           </div>
 
-          <!-- Category: Database - DBMS -->
-          <div class="skill-card card" data-category="database">
+          <!-- R -->
+          <div class="skill-card card" data-category="core-lang">
             <div class="skill-top">
-              <div class="skill-icon-wrap backend-icon">
-                <span class="code-symbol">🗄️</span>
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe)">
+                <span class="code-symbol" style="font-size:0.85rem;font-weight:800;color:#1d4ed8">R</span>
               </div>
               <div class="skill-meta">
-                <h3 class="skill-name">DBMS</h3>
-                <span class="skill-cat-label">Database Management</span>
+                <h3 class="skill-name">R</h3>
+                <span class="skill-cat-label">Statistical Computing</span>
               </div>
-              <span class="badge badge-basic">Core Skill</span>
+              <span class="badge badge-basic">Basic</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="DBMS proficiency 65%">
-              <div class="meter-bar meter-basic" style="width: 65%;"></div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="R proficiency">
+              <div class="meter-bar meter-basic" style="width: 45%;"></div>
             </div>
-            <p class="skill-detail">Relational database design, SQL querying (SELECT, JOIN, nested queries), normalization, ACID properties, and data integrity.</p>
+            <p class="skill-detail">Statistical data handling, vectors, dataframes, and academic computing concepts.</p>
           </div>
 
-          <!-- Category: Development Tools - Android Studio -->
+          <!-- ===== WEB TECHNOLOGIES ===== -->
+
+          <!-- HTML -->
+          <div class="skill-card card" data-category="web">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#fff7ed,#fed7aa)">
+                <span class="code-symbol" style="font-size:0.75rem;color:#c2410c">&lt;/&gt;</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">HTML</h3>
+                <span class="skill-cat-label">Markup Fundamental</span>
+              </div>
+              <span class="badge badge-basic">Basic</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="HTML proficiency">
+              <div class="meter-bar meter-basic" style="width: 70%;"></div>
+            </div>
+            <p class="skill-detail">Semantic HTML5 tags, accessibility structure, forms, and web document hierarchy.</p>
+          </div>
+
+          <!-- CSS -->
+          <div class="skill-card card" data-category="web">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#fff7ed,#fed7aa)">
+                <span class="code-symbol" style="font-size:1rem;font-weight:800;color:#c2410c">#</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">CSS</h3>
+                <span class="skill-cat-label">Styling Fundamental</span>
+              </div>
+              <span class="badge badge-basic">Basic</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="CSS proficiency">
+              <div class="meter-bar meter-basic" style="width: 65%;"></div>
+            </div>
+            <p class="skill-detail">Flexbox, CSS Grid, media queries, CSS variables, and clean responsive design layouts.</p>
+          </div>
+
+          <!-- Tailwind CSS -->
+          <div class="skill-card card" data-category="web">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe)">
+                <span class="code-symbol" style="font-size:0.65rem;font-weight:800;color:#1d4ed8">TW</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Tailwind CSS</h3>
+                <span class="skill-cat-label">Utility Framework</span>
+              </div>
+              <span class="badge badge-basic">Basic</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Tailwind CSS proficiency">
+              <div class="meter-bar meter-basic" style="width: 55%;"></div>
+            </div>
+            <p class="skill-detail">Utility-first styling applied in real projects (Virtual Assistant web app).</p>
+          </div>
+
+          <!-- React -->
+          <div class="skill-card card" data-category="web">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#fff7ed,#fed7aa)">
+                <span class="code-symbol">&#9883;&#65039;</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">React</h3>
+                <span class="skill-cat-label">Frontend Library</span>
+              </div>
+              <span class="badge badge-beginner">Beginner</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" aria-label="React proficiency">
+              <div class="meter-bar meter-beginner" style="width: 35%;"></div>
+            </div>
+            <p class="skill-detail">Component architecture, JSX, hooks (useState, useEffect), and MERN integration.</p>
+          </div>
+
+          <!-- Next.js -->
+          <div class="skill-card card" data-category="web">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#fff7ed,#fed7aa)">
+                <span class="code-symbol" style="font-size:0.9rem;font-weight:800;color:#c2410c">&#9650;</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Next.js</h3>
+                <span class="skill-cat-label">React Framework</span>
+              </div>
+              <span class="badge badge-beginner">Beginner</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" aria-label="Next.js proficiency">
+              <div class="meter-bar meter-beginner" style="width: 30%;"></div>
+            </div>
+            <p class="skill-detail">Introductory concepts of file-based routing, server rendering, and modern web deployment.</p>
+          </div>
+
+          <!-- Node.js -->
+          <div class="skill-card card" data-category="web">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0)">
+                <span class="code-symbol">&#128994;</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Node.js</h3>
+                <span class="skill-cat-label">JS Runtime</span>
+              </div>
+              <span class="badge badge-beginner">Beginner</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js proficiency">
+              <div class="meter-bar meter-beginner" style="width: 35%;"></div>
+            </div>
+            <p class="skill-detail">Server execution, npm package management, RESTful API endpoints, and event loops.</p>
+          </div>
+
+          <!-- Express.js -->
+          <div class="skill-card card" data-category="web">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0)">
+                <span class="code-symbol" style="font-size:0.7rem;font-weight:800;color:#166534">ex</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Express.js</h3>
+                <span class="skill-cat-label">Web Framework</span>
+              </div>
+              <span class="badge badge-beginner">Beginner</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" aria-label="Express.js proficiency">
+              <div class="meter-bar meter-beginner" style="width: 30%;"></div>
+            </div>
+            <p class="skill-detail">Routing, middleware, JSON API responses, and backend-to-frontend bridging.</p>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="skill-card card" data-category="web">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0)">
+                <span class="code-symbol">&#127811;</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">MongoDB</h3>
+                <span class="skill-cat-label">NoSQL Database</span>
+              </div>
+              <span class="badge badge-beginner">Beginner</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" aria-label="MongoDB proficiency">
+              <div class="meter-bar meter-beginner" style="width: 30%;"></div>
+            </div>
+            <p class="skill-detail">Document storage, collections, schema definition with Mongoose, and CRUD operations.</p>
+          </div>
+
+          <!-- Supabase -->
+          <div class="skill-card card" data-category="web">
+            <div class="skill-top">
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0)">
+                <span class="code-symbol">&#9889;</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Supabase</h3>
+                <span class="skill-cat-label">BaaS / PostgreSQL</span>
+              </div>
+              <span class="badge badge-beginner">Beginner</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100" aria-label="Supabase proficiency">
+              <div class="meter-bar meter-beginner" style="width: 28%;"></div>
+            </div>
+            <p class="skill-detail">Cloud database setup, table configurations, and backend-as-a-service concepts.</p>
+          </div>
+
+          <!-- ===== TOOLS & PLATFORMS ===== -->
+
+          <!-- MySQL -->
           <div class="skill-card card" data-category="tools">
             <div class="skill-top">
-              <div class="skill-icon-wrap tool-icon">
-                <span class="code-symbol">📱</span>
+              <div class="skill-icon-wrap tool-icon" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0)">
+                <span class="code-symbol">&#128044;</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">MySQL</h3>
+                <span class="skill-cat-label">Relational Database</span>
+              </div>
+              <span class="badge badge-beginner">Beginner</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="MySQL proficiency">
+              <div class="meter-bar meter-beginner" style="width: 45%;"></div>
+            </div>
+            <p class="skill-detail">Relational schemas, queries (SELECT, JOIN, INSERT, UPDATE), keys, and normalization.</p>
+          </div>
+
+          <!-- Google Antigravity -->
+          <div class="skill-card card" data-category="tools">
+            <div class="skill-top">
+              <div class="skill-icon-wrap tool-icon" style="background:linear-gradient(135deg,#f0fdf4,#dcfce7)">
+                <span class="code-symbol" style="color:#15803d">&#10022;</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Google Antigravity</h3>
+                <span class="skill-cat-label">Agentic IDE</span>
+              </div>
+              <span class="badge badge-intermediate">Intermediate</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Google Antigravity proficiency">
+              <div class="meter-bar meter-intermediate" style="width: 70%;"></div>
+            </div>
+            <p class="skill-detail">Active proficiency in agentic workflows, prompt engineering, task execution, and modern tooling.</p>
+          </div>
+
+          <!-- VS Code -->
+          <div class="skill-card card" data-category="tools">
+            <div class="skill-top">
+              <div class="skill-icon-wrap tool-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe)">
+                <span class="code-symbol">&#128187;</span>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">VS Code</h3>
+                <span class="skill-cat-label">Primary Code Editor</span>
+              </div>
+              <span class="badge badge-basic">Basic</span>
+            </div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="VS Code proficiency">
+              <div class="meter-bar meter-basic" style="width: 70%;"></div>
+            </div>
+            <p class="skill-detail">Daily development environment, debugging tools, workspace configuration, and extensions.</p>
+          </div>
+
+          <!-- Android Studio -->
+          <div class="skill-card card" data-category="tools">
+            <div class="skill-top">
+              <div class="skill-icon-wrap tool-icon" style="background:linear-gradient(135deg,#e0e7ff,#c7d2fe)">
+                <span class="code-symbol">&#128241;</span>
               </div>
               <div class="skill-meta">
                 <h3 class="skill-name">Android Studio</h3>
                 <span class="skill-cat-label">Mobile IDE</span>
               </div>
-              <span class="badge badge-basic">Core Tool</span>
+              <span class="badge badge-basic">Basic</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Android Studio proficiency 60%">
-              <div class="meter-bar meter-basic" style="width: 60%;"></div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Android Studio proficiency">
+              <div class="meter-bar meter-basic" style="width: 55%;"></div>
             </div>
-            <p class="skill-detail">Android project configuration, emulator debugging, XML layout hierarchies, and Gradle build setups.</p>
+            <p class="skill-detail">Android project configuration, emulators, layout XML, and mobile development setup.</p>
           </div>
 
-          <!-- Category: Development Tools - IntelliJ IDEA -->
+          <!-- IntelliJ IDEA -->
           <div class="skill-card card" data-category="tools">
             <div class="skill-top">
-              <div class="skill-icon-wrap tool-icon">
-                <span class="code-symbol">IJ</span>
+              <div class="skill-icon-wrap tool-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe)">
+                <span class="code-symbol" style="font-size:0.65rem;font-weight:800;color:#1d4ed8">IJ</span>
               </div>
               <div class="skill-meta">
                 <h3 class="skill-name">IntelliJ IDEA</h3>
                 <span class="skill-cat-label">Java / Kotlin IDE</span>
               </div>
-              <span class="badge badge-basic">Core Tool</span>
+              <span class="badge badge-basic">Basic</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="IntelliJ IDEA proficiency 60%">
+            <div class="skill-meter" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="IntelliJ IDEA proficiency">
               <div class="meter-bar meter-basic" style="width: 60%;"></div>
             </div>
-            <p class="skill-detail">Java and Kotlin development, automated refactoring, code compilation, and project workspace organization.</p>
+            <p class="skill-detail">Java development, compilation, refactoring tools, and project management.</p>
           </div>
 
-          <!-- Category: Development Tools - VS Code & Git -->
+          <!-- Git -->
           <div class="skill-card card" data-category="tools">
             <div class="skill-top">
-              <div class="skill-icon-wrap tool-icon">
-                <span class="code-symbol">⌨</span>
+              <div class="skill-icon-wrap tool-icon" style="background:linear-gradient(135deg,#fff7ed,#fed7aa)">
+                <span class="code-symbol">&#127807;</span>
               </div>
               <div class="skill-meta">
-                <h3 class="skill-name">VS Code & Git</h3>
-                <span class="skill-cat-label">Editor & Version Control</span>
+                <h3 class="skill-name">Git</h3>
+                <span class="skill-cat-label">Version Control</span>
               </div>
-              <span class="badge badge-basic">Core Tool</span>
+              <span class="badge badge-beginner">Beginner</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="VS Code and Git proficiency 65%">
-              <div class="meter-bar meter-basic" style="width: 65%;"></div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Git proficiency">
+              <div class="meter-bar meter-beginner" style="width: 45%;"></div>
             </div>
-            <p class="skill-detail">Code editing, extensions, multi-file workspaces, Git version control, commits, and GitHub repository hosting.</p>
+            <p class="skill-detail">Basic version control: repository init, commits, branches, and merge workflows.</p>
           </div>
 
-          <!-- Category: Learning & Tech Interests - Flutter -->
-          <div class="skill-card card learning-card" data-category="learning">
+          <!-- GitHub -->
+          <div class="skill-card card" data-category="tools">
             <div class="skill-top">
-              <div class="skill-icon-wrap web-icon">
-                <span class="code-symbol">💙</span>
+              <div class="skill-icon-wrap tool-icon" style="background:linear-gradient(135deg,#f3f4f6,#e5e7eb)">
+                <span class="code-symbol">&#128025;</span>
               </div>
               <div class="skill-meta">
-                <h3 class="skill-name">Flutter</h3>
-                <span class="skill-cat-label">Cross-Platform UI</span>
+                <h3 class="skill-name">GitHub</h3>
+                <span class="skill-cat-label">Code Collaboration</span>
               </div>
-              <span class="badge badge-learning">
-                <span class="learning-dot" aria-hidden="true"></span>
-                Learning Interest
-              </span>
+              <span class="badge badge-beginner">Beginner</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Flutter learning progress">
-              <div class="meter-bar meter-learning" style="width: 45%;"></div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="GitHub proficiency">
+              <div class="meter-bar meter-beginner" style="width: 50%;"></div>
             </div>
-            <p class="skill-detail">Active exploration in cross-platform mobile UI engineering, widget tree architecture, and dynamic multi-platform development.</p>
+            <p class="skill-detail">Remote repository hosting, pushing project commits, code exploration, and issues.</p>
           </div>
 
-          <!-- Category: Learning & Tech Interests - Android Development -->
-          <div class="skill-card card learning-card" data-category="learning">
+          <!-- Vercel -->
+          <div class="skill-card card" data-category="tools">
             <div class="skill-top">
-              <div class="skill-icon-wrap tool-icon">
-                <span class="code-symbol">🤖</span>
+              <div class="skill-icon-wrap tool-icon" style="background:linear-gradient(135deg,#fff7ed,#fed7aa)">
+                <span class="code-symbol" style="font-size:0.9rem;font-weight:800;color:#c2410c">&#9650;</span>
               </div>
               <div class="skill-meta">
-                <h3 class="skill-name">Android Development</h3>
-                <span class="skill-cat-label">Native Mobile Apps</span>
+                <h3 class="skill-name">Vercel</h3>
+                <span class="skill-cat-label">Cloud Deployment</span>
               </div>
-              <span class="badge badge-learning">
-                <span class="learning-dot" aria-hidden="true"></span>
-                Learning Interest
-              </span>
+              <span class="badge badge-beginner">Beginner</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Android development learning progress">
-              <div class="meter-bar meter-learning" style="width: 50%;"></div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Vercel proficiency">
+              <div class="meter-bar meter-beginner" style="width: 45%;"></div>
             </div>
-            <p class="skill-detail">Curiosity-driven study of native Android architecture, activities, intents, Material Design, and mobile user interaction flows.</p>
+            <p class="skill-detail">Frontend project deployments, environment variables, and live preview staging.</p>
           </div>
 
-          <!-- Category: Learning & Tech Interests - Web Application Development -->
-          <div class="skill-card card learning-card" data-category="learning">
+          <!-- UI/UX Design -->
+          <div class="skill-card card" data-category="tools">
             <div class="skill-top">
-              <div class="skill-icon-wrap web-icon">
-                <span class="code-symbol">&lt;/&gt;</span>
+              <div class="skill-icon-wrap tool-icon" style="background:linear-gradient(135deg,#fdf4ff,#f5d0fe)">
+                <span class="code-symbol">&#127912;</span>
               </div>
               <div class="skill-meta">
-                <h3 class="skill-name">Web App Development</h3>
-                <span class="skill-cat-label">Modern Web Systems</span>
+                <h3 class="skill-name">UI/UX Design</h3>
+                <span class="skill-cat-label">Design &amp; Ergonomics</span>
               </div>
-              <span class="badge badge-learning">
-                <span class="learning-dot" aria-hidden="true"></span>
-                Learning Interest
-              </span>
+              <span class="badge badge-beginner">Beginner</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Web application development learning progress">
-              <div class="meter-bar meter-learning" style="width: 55%;"></div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="UI/UX Design proficiency">
+              <div class="meter-bar meter-beginner" style="width: 40%;"></div>
             </div>
-            <p class="skill-detail">Ongoing focus on full-stack web architectures, REST APIs, responsive client-server interfaces, and modern front-end styling.</p>
+            <p class="skill-detail">User journey mapping, wireframing, color harmony, and mobile user experience thinking.</p>
           </div>
 
-          <!-- Category: Learning & Tech Interests - Cloud Technologies -->
-          <div class="skill-card card learning-card" data-category="learning">
+          <!-- ===== OTHER ===== -->
+
+          <!-- Problem Solving -->
+          <div class="skill-card card" data-category="other">
             <div class="skill-top">
-              <div class="skill-icon-wrap backend-icon">
-                <span class="code-symbol">☁️</span>
+              <div class="skill-icon-wrap lang-icon" style="background:linear-gradient(135deg,#fdf4ff,#f5d0fe)">
+                <span class="code-symbol">&#129513;</span>
               </div>
               <div class="skill-meta">
-                <h3 class="skill-name">Cloud Technologies</h3>
-                <span class="skill-cat-label">AWS & Google Cloud</span>
+                <h3 class="skill-name">Problem Solving</h3>
+                <span class="skill-cat-label">Analytical Thinking</span>
               </div>
-              <span class="badge badge-learning">
-                <span class="learning-dot" aria-hidden="true"></span>
-                Learning Interest
-              </span>
+              <span class="badge badge-beginner">Beginner</span>
             </div>
-            <div class="skill-meter" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Cloud technologies learning progress">
-              <div class="meter-bar meter-learning" style="width: 55%;"></div>
+            <div class="skill-meter" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Problem Solving proficiency">
+              <div class="meter-bar meter-beginner" style="width: 45%;"></div>
             </div>
-            <p class="skill-detail">Reinforced by AWS and Google Cloud certifications; actively exploring cloud hosting, distributed computing, and serverless workflows.</p>
+            <p class="skill-detail">Logical step breakdown, debugging techniques, and competitive analytical strategy (Chess champion).</p>
           </div>
-
         </div>
       </div>
     </section>
