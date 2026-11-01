@@ -61,7 +61,7 @@ Highlights technical interests in **software development, mobile application dev
 
 ## 📬 Contact
 - **Email:** [azmiyaaayat62@gmail.com](mailto:azmiyaaayat62@gmail.com)
-- **LinkedIn:** [https://linkedin.com/in/AzmiyaAayat](https://linkedin.com/in/AzmiyaAayat)
+- **LinkedIn:** [https://www.linkedin.com/in/azmiyaaayat26](https://www.linkedin.com/in/azmiyaaayat26)
 - **Location:** Udupi, Karnataka, India
 
 ---
