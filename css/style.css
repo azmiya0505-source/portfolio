@@ -2090,10 +2090,10 @@ body.cursor-view .cursor-dot {
 
 .giant-wordmark {
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 14vw, 14.5rem);
+  font-size: clamp(2.5rem, 10vw, 11rem);
   font-weight: 300;
   text-transform: uppercase;
-  line-height: 0.85;
+  line-height: 1.1;
   letter-spacing: clamp(0.08em, 0.25vw, 0.2em);
   color: transparent;
   -webkit-text-stroke: 1.5px rgba(212, 175, 55, 0.35);
