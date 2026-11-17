@@ -42,7 +42,7 @@
   --font-mono: "Courier New", Courier, monospace;
 
   /* Fluid Typography Scale */
-  --text-hero-name: clamp(2.2rem, 8.5vw, 7.8rem);
+  --text-hero-name: clamp(2.8rem, 8.5vw, 7.8rem);
   --text-h1: clamp(2.2rem, 4.5vw, 3.8rem);
   --text-h2: clamp(1.75rem, 3.2vw, 2.75rem);
   --text-h3: clamp(1.25rem, 2.2vw, 1.75rem);
@@ -772,8 +772,7 @@ body.cursor-view .cursor-dot {
 .hero-name-wrap {
   overflow: hidden;
   margin-bottom: 0.5rem;
-  /* Enough height for two lines when name wraps on small screens */
-  min-height: calc(var(--text-hero-name) * 2.4);
+  padding-bottom: 0.15em;
 }
 
 .hero-name-display {
@@ -786,8 +785,8 @@ body.cursor-view .cursor-dot {
   color: var(--text-primary);
   margin: 0;
   display: block;
-  word-break: break-word;
-  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 .hero-name-display .split-char {
