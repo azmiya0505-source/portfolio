@@ -802,6 +802,38 @@ body.cursor-view .cursor-dot {
   }
 }
 
+/* Hero Header Layout: Name & Role on Left, Arch Portrait Beside on Right */
+.hero-header-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (min-width: 992px) {
+  .hero-header-row {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3.5rem;
+  }
+
+  .hero-portrait-col {
+    flex-shrink: 0;
+    margin-top: -0.5rem;
+  }
+
+  .hero-portrait-container {
+    max-width: 290px;
+    width: 290px;
+  }
+}
+
 /* Oversized, Wide, Light-Weight, Letter-Spaced Name */
 .hero-name-wrap {
   overflow: hidden;
@@ -867,42 +899,28 @@ body.cursor-view .cursor-dot {
   font-weight: 600;
 }
 
-/* Hero Content Grid (Left Focus & CTAs, Center Portrait, Right Stats) */
+/* Hero Content Grid (Left Focus & CTAs, Right Stats) */
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border-subtle);
-  align-items: center;
+  align-items: flex-start;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 960px) {
   .hero-grid {
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 2.5rem;
-  }
-  .hero-stats-wrap {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 4rem;
+    align-items: flex-start;
   }
 }
 
-@media (min-width: 1024px) {
-  .hero-grid {
-    grid-template-columns: 1.25fr 0.9fr 0.85fr;
-    gap: 3rem;
-    align-items: center;
-  }
-}
-
-/* Mobile: Portrait placed below name, before focus list */
-@media (max-width: 767px) {
+/* Mobile: Portrait centered with nice spacing */
+@media (max-width: 991px) {
   .hero-portrait-col {
-    order: -1;
-    margin: 0.5rem auto 1.5rem;
+    margin: 1.5rem auto 1rem;
     max-width: 280px;
     width: 100%;
   }
