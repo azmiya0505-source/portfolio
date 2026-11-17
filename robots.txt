@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://azmiya-aayat.vercel.app/sitemap.xml
+
