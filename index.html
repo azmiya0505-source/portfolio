@@ -217,13 +217,23 @@
 
       <!-- Right: Name, Bio & Social Channels -->
       <div class="menu-info-column">
-        <div>
-          <h2 class="menu-info-title">Azmiya Aayat</h2>
-          <p class="menu-info-bio">
-            Computer Applications graduate currently pursuing MCA at Poornaprajna Institute of Management (PIM), Udupi.
-            Building mobile apps, web systems, and AI-driven applications with analytical rigor.
-          </p>
+        <div class="menu-profile-header">
+          <div class="menu-avatar-ring">
+            <picture>
+              <source srcset="assets/images/azmiya-avatar.webp" type="image/webp">
+              <img src="assets/images/azmiya-avatar.png" alt="Azmiya Aayat, MCA student and mobile and web developer"
+                class="menu-avatar-img" width="400" height="400" loading="lazy">
+            </picture>
+          </div>
+          <div>
+            <h2 class="menu-info-title">Azmiya Aayat</h2>
+            <p class="menu-info-tagline">MCA Candidate &bull; Software Engineer</p>
+          </div>
         </div>
+        <p class="menu-info-bio">
+          Computer Applications graduate currently pursuing MCA at Poornaprajna Institute of Management (PIM), Udupi.
+          Building mobile apps, web systems, and AI-driven applications with analytical rigor.
+        </p>
 
         <div class="menu-social-links">
           <a href="https://www.linkedin.com/in/azmiyaaayat26" target="_blank" rel="noopener noreferrer"
@@ -309,7 +319,7 @@
         <!-- Hero Content Grid -->
         <div class="hero-grid">
           <!-- Left: Focus Items, CTAs, Socials -->
-          <div>
+          <div class="hero-main-col">
             <!-- Vertical List of Focus Items with '+' Icons -->
             <div class="hero-focus-list">
               <div class="focus-item">
@@ -386,6 +396,22 @@
                 </svg>
                 <span>GitHub</span>
               </a>
+            </div>
+          </div>
+
+          <!-- Hero Portrait: Arch-Shaped Frame (Right on Desktop, Below Name on Mobile) -->
+          <div class="hero-portrait-col" id="hero-portrait-col">
+            <div class="hero-portrait-container" id="hero-portrait-container">
+              <div class="hero-portrait-frame" id="hero-portrait-frame">
+                <picture>
+                  <source srcset="assets/images/azmiya-half.webp" type="image/webp">
+                  <img src="assets/images/azmiya-half.png" alt="Azmiya Aayat, MCA student and mobile and web developer"
+                    class="hero-portrait-img" width="900" height="1100" loading="eager" fetchpriority="high">
+                </picture>
+                <div class="hero-portrait-overlay" aria-hidden="true"></div>
+                <div class="hero-portrait-gold-tint" aria-hidden="true"></div>
+              </div>
+              <div class="hero-portrait-border" aria-hidden="true"></div>
             </div>
           </div>
 
@@ -485,6 +511,21 @@
         <div class="summary-grid">
           <!-- Main Story Card -->
           <div class="card summary-main-card reveal-fade">
+            <!-- Author Profile Intro with Circular Gold Ring Avatar -->
+            <div class="summary-author-banner">
+              <div class="summary-avatar-ring">
+                <picture>
+                  <source srcset="assets/images/azmiya-avatar.webp" type="image/webp">
+                  <img src="assets/images/azmiya-avatar.png" alt="Azmiya Aayat, MCA student and mobile and web developer"
+                    class="summary-avatar-img" width="400" height="400" loading="lazy">
+                </picture>
+              </div>
+              <div class="summary-author-text">
+                <h3 class="summary-author-name">Azmiya Aayat</h3>
+                <span class="summary-author-role">Master of Computer Applications &bull; Software &amp; Mobile Engineer</span>
+              </div>
+            </div>
+
             <p class="summary-paragraph">
               I am a <strong>Computer Applications graduate currently pursuing Master of Computer Applications
                 (MCA)</strong> at

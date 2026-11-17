@@ -643,14 +643,48 @@ body.cursor-view .cursor-dot {
   }
 }
 
+.menu-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.menu-avatar-ring {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--gold-primary);
+  box-shadow: 0 0 16px var(--gold-glow);
+  flex-shrink: 0;
+  background-color: var(--bg-surface);
+}
+
+.menu-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  filter: saturate(0.85) contrast(1.05);
+}
+
 .menu-info-title {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--text-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.15rem;
+}
+
+.menu-info-tagline {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  color: var(--gold-primary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .menu-info-bio {
@@ -833,21 +867,132 @@ body.cursor-view .cursor-dot {
   font-weight: 600;
 }
 
-/* Hero Content Grid (Left Focus & CTAs, Right Stats) */
+/* Hero Content Grid (Left Focus & CTAs, Center Portrait, Right Stats) */
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border-subtle);
+  align-items: center;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .hero-grid {
-    grid-template-columns: 1.4fr 1fr;
-    gap: 4rem;
-    align-items: flex-start;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 2.5rem;
   }
+  .hero-stats-wrap {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1.25fr 0.9fr 0.85fr;
+    gap: 3rem;
+    align-items: center;
+  }
+}
+
+/* Mobile: Portrait placed below name, before focus list */
+@media (max-width: 767px) {
+  .hero-portrait-col {
+    order: -1;
+    margin: 0.5rem auto 1.5rem;
+    max-width: 280px;
+    width: 100%;
+  }
+}
+
+/* Hero Portrait Arch-Shaped Frame (Right on Desktop, Below Name on Mobile) */
+.hero-portrait-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
+}
+
+.hero-portrait-container {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  perspective: 1000px;
+}
+
+.hero-portrait-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 160px 160px 16px 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 0 35px var(--gold-glow), 0 20px 45px rgba(0, 0, 0, 0.75);
+  background-color: #0d0d0d;
+  
+  /* Fade the bottom edge into black background */
+  -webkit-mask-image: linear-gradient(to bottom, #000000 78%, rgba(0, 0, 0, 0.35) 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000000 78%, rgba(0, 0, 0, 0.35) 90%, transparent 100%);
+  
+  /* Clip-path reveal from bottom on page load */
+  clip-path: inset(100% 0% 0% 0%);
+  transition: clip-path 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.35s,
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform, clip-path;
+}
+
+.hero-portrait-frame.revealed {
+  clip-path: inset(0% 0% 0% 0%);
+}
+
+.hero-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+  filter: saturate(0.8) contrast(1.05);
+  transform: scale(1.02);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-portrait-container:hover .hero-portrait-img {
+  transform: scale(1.06);
+}
+
+/* 40% Dark & Warm Gold Overlay (Navy Blazer & White Hijab natural) */
+.hero-portrait-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.15) 0%, rgba(10, 10, 10, 0.4) 65%, rgba(10, 10, 10, 0.85) 100%);
+}
+
+.hero-portrait-gold-tint {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 90%, rgba(212, 175, 55, 0.22) 0%, transparent 60%);
+  mix-blend-mode: soft-light;
+}
+
+/* Decorative Outer Aura Ring */
+.hero-portrait-border {
+  position: absolute;
+  inset: -6px;
+  border-radius: 166px 166px 20px 20px;
+  border: 1px dashed rgba(212, 175, 55, 0.22);
+  pointer-events: none;
+  transition: border-color var(--trans-fast);
+}
+
+.hero-portrait-container:hover .hero-portrait-border {
+  border-color: rgba(212, 175, 55, 0.45);
 }
 
 /* Vertical List of Focus Items with '+' */
@@ -1138,6 +1283,61 @@ body.cursor-view .cursor-dot {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+/* Summary Section Avatar Banner */
+.summary-author-banner {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 0.25rem;
+}
+
+.summary-avatar-ring {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--gold-primary);
+  box-shadow: 0 0 20px var(--gold-glow);
+  flex-shrink: 0;
+  background-color: var(--bg-surface);
+}
+
+.summary-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  filter: saturate(0.85) contrast(1.05);
+  transition: transform var(--trans-medium);
+}
+
+.summary-avatar-ring:hover .summary-avatar-img {
+  transform: scale(1.08);
+}
+
+.summary-author-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.summary-author-name {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.summary-author-role {
+  font-size: 0.88rem;
+  color: var(--gold-light);
+  letter-spacing: 0.02em;
 }
 
 .summary-paragraph {
@@ -2462,6 +2662,16 @@ body.cursor-view .cursor-dot {
 
   .reveal-fade {
     opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-portrait-frame {
+    clip-path: inset(0% 0% 0% 0%) !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .hero-portrait-col {
     transform: none !important;
   }
 }

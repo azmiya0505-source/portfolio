@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const preloader = document.getElementById('preloader');
   const heroNameDisplay = document.getElementById('hero-title');
   const heroGoldLine = document.getElementById('hero-gold-line');
+  const heroPortraitFrame = document.getElementById('hero-portrait-frame');
   const focusItems = document.querySelectorAll('.focus-item');
 
   function splitHeroNameIntoSpans() {
@@ -51,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isReducedMotion) {
       if (heroNameDisplay) heroNameDisplay.classList.add('revealed');
       if (heroGoldLine) heroGoldLine.classList.add('revealed');
+      if (heroPortraitFrame) heroPortraitFrame.classList.add('revealed');
       focusItems.forEach(item => item.classList.add('revealed'));
       return;
     }
@@ -58,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       if (heroNameDisplay) heroNameDisplay.classList.add('revealed');
       if (heroGoldLine) heroGoldLine.classList.add('revealed');
+      if (heroPortraitFrame) heroPortraitFrame.classList.add('revealed');
 
       focusItems.forEach((item, idx) => {
         setTimeout(() => {
@@ -623,6 +626,48 @@ document.addEventListener('DOMContentLoaded', () => {
           isTesting = false;
         }, 2000);
       }, 1200);
+    });
+  }
+
+  /* --------------------------------------------------------------------------
+     21. Hero Portrait: Parallax Float on Scroll & Subtle 3D Mouse Tilt (Desktop)
+     -------------------------------------------------------------------------- */
+  const portraitCol = document.getElementById('hero-portrait-col');
+  const portraitContainer = document.getElementById('hero-portrait-container');
+  const portraitFrame = document.getElementById('hero-portrait-frame');
+
+  if (portraitCol && !isReducedMotion) {
+    // Slow Parallax Float on Scroll
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+          if (scrollY < window.innerHeight * 1.5) {
+            portraitCol.style.transform = `translate3d(0, ${scrollY * 0.07}px, 0)`;
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  }
+
+  if (portraitContainer && portraitFrame && !isReducedMotion && window.matchMedia('(hover: hover) and (min-width: 1024px)').matches) {
+    // Subtle Mouse-Follow Tilt on Desktop Only
+    portraitContainer.addEventListener('mousemove', (e) => {
+      const rect = portraitContainer.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * -6; // max 6deg
+      const rotateY = ((x - centerX) / centerX) * 6;
+      portraitFrame.style.transform = `perspective(800px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale3d(1.015, 1.015, 1.015)`;
+    });
+
+    portraitContainer.addEventListener('mouseleave', () => {
+      portraitFrame.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
     });
   }
 });
