@@ -38,7 +38,7 @@ Highlights technical interests in **software development, mobile application dev
 ---
 
 ## 🚀 Featured Projects
-1. **Bus Management System:** Web-based platform to manage bus routes, timetables, and passenger information with relational DBMS.
+1. **Bus Management System:** Java application to manage bus routes, timetables, vehicle allocations, and passenger ticket records.
 2. **Virtual Assistant:** Full-stack voice-based interactive web assistant built with the MERN stack (MongoDB, Express, React, Node.js), Gemini API, and Ollama APIs.
 3. **Scratch Shooting Bird:** Interactive shooting game developed using Scratch with event-driven game loops and collision detection.
 4. **Animation Video Website:** Responsive website developed using HTML, CSS, and JavaScript to showcase animations and multimedia content.

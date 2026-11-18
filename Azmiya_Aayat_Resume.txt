@@ -45,11 +45,11 @@ TECHNICAL SKILLS
 FEATURED PROJECTS
 --------------------------------------------------------------------------------
 * Bus Management System
-  Technologies: HTML, CSS, JavaScript, PHP, DBMS / MySQL
-  - Web-based platform to manage bus routes, schedules, and passenger information.
-  - Designed relational database tables for route tracking, timetable lookups, 
-    fare calculations, and ticket reservation records.
-  - Implemented responsive front-end interface for schedule search and booking.
+  Technologies: Java
+  - Java application to manage bus routes, schedules, and passenger information.
+  - Developed core logic for route tracking, timetable lookups, vehicle allocations,
+    and ticket reservation records.
+  - Built structured object-oriented architecture for passenger booking and management.
 
 * Virtual Assistant (Voice-Based Interactive Assistant)
   Technologies: MERN Stack (React, Node.js, Express.js, MongoDB), Tailwind CSS, 
